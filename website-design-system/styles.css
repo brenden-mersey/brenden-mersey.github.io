@@ -1,0 +1,151 @@
+:root {
+  
+  --colour--ash-gray: hsl(97,13%,80%);
+  --colour--black: hsl(0, 0%, 7%);
+  --colour--cambridge-blue: hsl(133,18%,59%);
+  --colour--charcoal: hsl(201,20%,23%);
+  --colour--dark-slate-gray: hsl(186,21%,26%);
+  --colour--hookers-green: hsl(165,19%,40%);
+  --colour--off-white: hsl(0, 0%, 98%);
+  --colour--white: hsl(0, 0%, 100%);
+  
+  --font-family--serif: 'Playfair Display', serif;
+  --font-family--sans-serif: 'Work Sans', sans-serif;
+  
+  --grid-gutter: 16px;
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+html, body {
+  background: var(--colour--off-white);
+  color: var(--colour--black);
+  font-family: var(--font-family--sans-serif);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 32px;
+}
+
+/* Colour */
+.colour {
+  display: flex;
+  flex-flow: column;
+  height: 400px;
+  position: relative; 
+}
+
+.colour--ash-grey {
+  background: var(--colour--ash-gray);
+}
+
+.colour--cambridge-blue {
+  background: var(--colour--cambridge-blue);
+}
+
+.colour--hookers-green {
+  background: var(--colour--hookers-green);
+}
+
+.colour--dark-slate-gray {
+  background: var(--colour--dark-slate-gray);
+}
+
+.colour--charcoal {
+  background: var(--colour--charcoal);
+}
+
+.colour__item {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  display: inline-flex;
+  position: relative;
+  padding: 10px;
+}
+
+.colour__item::after {
+  background: var(--colour--white);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.colour__item:nth-child(1)::after {
+  opacity: 0;
+}
+
+.colour__item:nth-child(2)::after {
+  opacity: 25%;
+}
+
+.colour__item:nth-child(3)::after {
+  opacity: 50%;
+}
+
+.colour__item:nth-child(4)::after {
+  opacity: 75%;
+}
+
+.colour__name {
+  color: var(--colour--white);
+  font-weight: 400;
+}
+
+/* Grid */
+.grid {
+  gap: var(--grid-gutter);
+  display: grid;
+  width: 100%;
+}
+
+.grid--1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* Section */
+section {
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+/* Main */
+main {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  gap: 60px;
+}
