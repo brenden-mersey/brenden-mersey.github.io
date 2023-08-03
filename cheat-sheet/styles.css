@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Grouped Styles */
+table, h1, h2 {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+table, tr, td {
+  outline: none;
+}
+
+tr {
+  border-bottom: 4px solid hsl(210, 10%, 18%);
+}
+
+h1, h2 {
+  color: #EFE9F4;
+  text-align: center;
+  font-weight: 400;
+}
+
+/* Base */
+body, html {
+  font-family: 'Work Sans', sans-serif;
+  background: hsl(210, 10%, 18%);
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Tables */
+table {
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
+}
+
+td {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+}
+
+tr {
+  font-size: 12px;
+  background: hsl(210, 10%, 23%);
+}
+
+tr:hover {
+  background: hsl(210, 10%, 32%);
+}
+
+tbody tr:last-child {
+  border: none;
+}
+
+thead tr {
+  background: hsl(210, 10%, 28%);
+  font-weight: bold;
+}
+
+thead tr:hover {
+  background: hsl(210, 10%, 28%);
+}
+
+.high {
+  background: #0CCA4A;
+}
+
+.medium {
+  background: #08B2E3;
+}
+
+.low {
+  background: #EE6352;
+}
+
+/* Typography */
+h1 {
+  margin-top: 45px;
+}
+
+h2 {
+  margin: 45px auto 24px;
+}
+
+.table-attrs {
+  
+}
+
+.table-tags {
+}
+
+.table-tags tr td:last-child {
+  text-align: center;
+}
