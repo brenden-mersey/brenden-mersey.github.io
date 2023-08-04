@@ -14,7 +14,7 @@
   <body>
     
     <header>
-      <h1 class='heading'>Website Design System</h1>
+      <h1 class='heading heading--1'>Website Design System</h1>
       <nav>
         <div>Fonts</div>
         <div>Colors</div>
@@ -25,23 +25,24 @@
     
     <main>       
       <section>
-        <h2>References</h2>
+        <h2 class="heading heading--2">References</h2>
         <div class="legend">
           <p><a href="https://content.codecademy.com/PRO/independent-practice-projects/website-design-system/example/index.html?_gl=1*19aiapu*_ga*OTc1MDk1NTI1My4xNjg4NTA1Mzk1*_ga_3LRZM6TM9L*MTY5MTA5MDY5Ni4xNC4xLjE2OTEwOTUzMDkuNjAuMC4w" target="_blank" title="Reference Project">Reference project</a></p>
         </div>
       </section>
       <section>
-        <h2>Fonts</h2>
+        <h2 class="heading heading--2">Fonts</h2>
         <div class="legend"></div>
         <div class="grid"></div>
       </section>
       <section>
-        <h2>Colors</h2>
+        <h2 class="heading heading--2">Colors</h2>
         <div class="legend"></div>
         <div class="grid grid--5">
           <div class="colour colour--ash-grey">
             <div class="colour__item">
               <strong class="colour__name">Ash Gray</strong>
+              <span class="colour__code">hsl(97,13%,80%)</span>
             </div>
             <div class="colour__item"></div>
             <div class="colour__item"></div>
@@ -50,6 +51,7 @@
           <div class="colour colour--cambridge-blue">
             <div class="colour__item">
               <strong class="colour__name">Cambridge Blue</strong>
+              <span class="colour__code">hsl(133,18%,59%)</span>
             </div>
             <div class="colour__item"></div>
             <div class="colour__item"></div>
@@ -57,7 +59,8 @@
           </div>
           <div class="colour colour--hookers-green">
             <div class="colour__item">
-              <strong class="colour__name">Hooke's Green</strong>
+              <strong class="colour__name">Hooker's Green</strong>
+              <span class="colour__code">hsl(165,19%,40%)</span>
             </div>
             <div class="colour__item"></div>
             <div class="colour__item"></div>
@@ -66,6 +69,7 @@
           <div class="colour colour--dark-slate-gray">
             <div class="colour__item">
               <strong class="colour__name">Dark Slate Gray</strong>
+              <span class="colour__code">hsl(186,21%,26%)</span>
             </div>
             <div class="colour__item"></div>
             <div class="colour__item"></div>
@@ -74,6 +78,7 @@
           <div class="colour colour--charcoal">
             <div class="colour__item">
               <strong class="colour__name">Charcoal</strong>
+              <span class="colour__code">hsl(201,20%,23%)</span>
             </div>
             <div class="colour__item"></div>
             <div class="colour__item"></div>
@@ -82,73 +87,75 @@
         </div>
       </section>
       <section>
-        <h2>Buttons</h2>
+        <h2 class="heading heading--2">Buttons</h2>
         <div class="legend"></div>
-        <div class="button">
-          <button>Primary</button>
-          <button>Primary:Hover</button>
-          <button>Primary:Active</button>
-          <button>Primary:Focus</button>
+        <div class="button-grid">
+          <button class="button button--primary" type="button">Primary</button>
+          <button class="button button--primary" type="button">:Hover</button>
+          <button class="button button--primary" type="button">:Active</button>
+          <button class="button button--primary" type="button">:Focus</button>
         </div>
-        <div class="button">
-          <button>Secondary</button>
-          <button>Secondary:Hover</button>
-          <button>Secondary:Active</button>
-          <button>Secondary:Focus</button>
+        <div class="button-grid">
+          <button class="button button--secondary" type="button">Secondary</button>
+          <button class="button button--secondary" type="button">:Hover</button>
+          <button class="button button--secondary" type="button">:Active</button>
+          <button class="button button--secondary" type="button">:Focus</button>
         </div>
-        <div class="button">
-          <button>Tertiary</button>
-          <button>Tertiary:Hover</button>
-          <button>Tertiary:Active</button>
-          <button>Tertiary:Focus</button>
+        <div class="button-grid">
+          <button class="button button--tertiary" type="button">Tertiary</button>
+          <button class="button button--tertiary" type="button">:Hover</button>
+          <button class="button button--tertiary" type="button">:Active</button>
+          <button class="button button--tertiary" type="button">:Focus</button>
         </div>
       </section>
       <section>
-        <h2>Typography</h2>
+        <h2 class="heading heading--2">Typography</h2>
+        <p>Balancing design with serif and sans-serif typography is important because it can significantly impact the readability, aesthetics, and overall user experience of design, whether it's for print or digital media. I've chosen <a href="https://fonts.google.com/specimen/Work+Sans?query=work+san" target="_blank" title="Work Sans">Work Sans</a> and <a href="https://fonts.google.com/specimen/Playfair+Display?query=play" target="_blank" title="Playfair Display">Playfair Display</a> from <a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a> as the primary font vessels for this project.</p>
         <div class="legend"></div>
         <div class="type-scale">
-          <div class="type-scale__sample">Heading One</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample heading heading--1">Heading One</div>
+          <div class="type-scale__ratio">4.209rem/58.92px</div>
+          <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Heading Two</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample heading heading--2">Heading Two</div>
+          <div class="type-scale__ratio">3.157rem/44.20px</div>
+          <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Heading Three</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample heading heading--3">Heading Three</div>
+          <div class="type-scale__ratio">2.369rem/33.16px</div>
+          <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Heading Four</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample heading heading--4">Heading Four</div>
+          <div class="type-scale__ratio">1.777rem/24.88px</div>
+          <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Body Bold</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample body-copy body-copy--500">Body Bold</div>
+          <div class="type-scale__ratio">1rem/14.00px</div>
+          <div class="type-scale__family">Work Sans</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Body</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample body-copy">Body</div>
+          <div class="type-scale__ratio">1rem/14.00px</div>
+          <div class="type-scale__family">Work Sans</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample">Button & Meta</div>
-          <div class="type-scale__ratio"></div>
-          <div class="type-scale__family"></div>
+          <div class="type-scale__sample body-copy body-copy--500">Button & Meta</div>
+          <div class="type-scale__ratio">1.333rem/18.66px</div>
+          <div class="type-scale__family">Work Sans</div>
         </div>
       </section>
     </main>
     
     <footer>
       <ul class="references">
-        <li>Box Shadow by <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank" title="Box Shadow by CSS Scan">CSS Scan</a></li>
+        <li>Box Shadow & Buttons by <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank" title="Box Shadow by CSS Scan">CSS Scan</a></li>
         <li>Colour Palette by <a href="https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46" target="_blank" title="Colour Palette by Coolors">Coolors</a></li>
         <li>General Inspo by <a href="https://elementor.com/blog/web-design-style-guide/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQjwoK2mBhDzARIsADGbjeqL1U2Ik6uxXdOrt3QuPmqxsYUQZm3oETeHU4Lz1Y6V9JUgqMuhtnoaAsuyEALw_wcB" target="_blank" title="General Inspo by Elementor">Elementor</a></li>
+        <li>Type Scale by <a href="https://typescale.com/" target="_blank" title="Type Scale by TypeScale">TypeScale</a></li>
       </ul>
       <p class="copyright">&copy; <span id='copyright-year'></span> Website Design System. All Rights Reserved.</p> 
     </footer>
