@@ -8,18 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="./styles.css" type="text/css" rel="stylesheet">
   </head>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
+    
   <body>
     
     <header>
       <h1 class='heading heading--1'>Website Design System</h1>
       <nav>
-        <div>Fonts</div>
-        <div>Colors</div>
-        <div>Buttons</div>
-        <div>Typography</div>
+        <div><a href="#colours" target="_self" title="Colours">Colours</a></div>
+        <div><a href="#buttons" target="_self" title="Buttons">Buttons</a></div>
+        <div><a href="#fonts" target="_self" title="Fonts">Fonts</a></div>
+        <div><a href="#typesetting" target="_self" title="Typesetting">Typesetting</a></div>
       </nav>
     </header>
     
@@ -30,14 +28,12 @@
           <p><a href="https://content.codecademy.com/PRO/independent-practice-projects/website-design-system/example/index.html?_gl=1*19aiapu*_ga*OTc1MDk1NTI1My4xNjg4NTA1Mzk1*_ga_3LRZM6TM9L*MTY5MTA5MDY5Ni4xNC4xLjE2OTEwOTUzMDkuNjAuMC4w" target="_blank" title="Reference Project">Reference project</a></p>
         </div>
       </section>
-      <section>
-        <h2 class="heading heading--2">Fonts</h2>
-        <div class="legend"></div>
-        <div class="grid"></div>
-      </section>
-      <section>
-        <h2 class="heading heading--2">Colors</h2>
-        <div class="legend"></div>
+      <section id="colours">
+        <div class="intro">
+          <h2 class="heading heading--2">Colours</h2>
+          <p>A cohesive colour palette is a crucial aspect of design that contributes to the overall success and impact of a project or brand. It enhances visual appeal, communicates messages effectively, and establishes a strong and consistent identity.</p>
+          <p>Green was selected because it is a versatile and widely used colour in design due to its strong connections with nature, its soothing qualities, and its ability to create a harmonious and balanced visual experience. Understanding the colour theory behind green allows designers to use it effectively in their projects to achieve specific emotional and psychological effects.</p>
+        </div>
         <div class="grid grid--5">
           <div class="colour colour--ash-grey">
             <div class="colour__item">
@@ -86,79 +82,125 @@
           </div>
         </div>
       </section>
-      <section>
-        <h2 class="heading heading--2">Buttons</h2>
-        <div class="legend"></div>
+      <section id="buttons">
+        <div class="intro">
+          <h2 class="heading heading--2">Buttons</h2>
+          <p>Buttons are vital components of web design that facilitate user interaction, encourage specific actions, and contribute to the overall usability and success of a website. Their presence and effective design play a significant role in achieving the website's goals and providing a positive user experience.</p>
+          <p>I opted for <a href="https://en.wikipedia.org/wiki/Flat_design" target="_blank" title="Flat Design">Flat design</a> over <a href="https://en.wikipedia.org/wiki/Skeuomorph" target="_blank" title="Skeuomorphic Design">Skeuomorphic design</a> because of its minimalistic approach to visual elements. Clean lines, simple shapes, and a minimalistic approach to design components embraces a modern aesthetic that aligns well with contemporary design trends and user preferences.</p>
+        </div>
         <div class="button-grid">
           <button class="button button--primary" type="button">Primary</button>
-          <button class="button button--primary" type="button">:Hover</button>
-          <button class="button button--primary" type="button">:Active</button>
-          <button class="button button--primary" type="button">:Focus</button>
+          <button class="button button--primary button--primary-hover" type="button">:hover</button>
+          <button class="button button--primary button--primary-active" type="button">:active</button>
+          <button class="button button--primary button--primary-focus" type="button">:focus</button>
+          <button class="button button--primary button--primary-disabled" type="button">:disabled</button>
         </div>
         <div class="button-grid">
           <button class="button button--secondary" type="button">Secondary</button>
-          <button class="button button--secondary" type="button">:Hover</button>
-          <button class="button button--secondary" type="button">:Active</button>
-          <button class="button button--secondary" type="button">:Focus</button>
+          <button class="button button--secondary button--secondary-hover" type="button">:hover</button>
+          <button class="button button--secondary button--secondary-active" type="button">:active</button>
+          <button class="button button--secondary button--secondary-focus" type="button">:focus</button>
+          <button class="button button--secondary button--secondary-disabled" type="button">:disabled</button>
         </div>
         <div class="button-grid">
           <button class="button button--tertiary" type="button">Tertiary</button>
-          <button class="button button--tertiary" type="button">:Hover</button>
-          <button class="button button--tertiary" type="button">:Active</button>
-          <button class="button button--tertiary" type="button">:Focus</button>
+          <button class="button button--tertiary button--tertiary-hover" type="button">:hover</button>
+          <button class="button button--tertiary button--tertiary-active" type="button">:active</button>
+          <button class="button button--tertiary button--tertiary-focus" type="button">:focus</button>
+          <button class="button button--tertiary button--tertiary-disabled" type="button">:disabled</button>
         </div>
       </section>
-      <section>
-        <h2 class="heading heading--2">Typography</h2>
-        <p>Balancing design with serif and sans-serif typography is important because it can significantly impact the readability, aesthetics, and overall user experience of design, whether it's for print or digital media. I've chosen <a href="https://fonts.google.com/specimen/Work+Sans?query=work+san" target="_blank" title="Work Sans">Work Sans</a> and <a href="https://fonts.google.com/specimen/Playfair+Display?query=play" target="_blank" title="Playfair Display">Playfair Display</a> from <a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a> as the primary font vessels for this project.</p>
-        <div class="legend"></div>
+      <section id="fonts">
+        <div class="intro">
+          <h2 class="heading heading--2">Fonts</h2>
+          <p>Balancing design with serif and sans-serif typography is important because it can significantly impact the readability, aesthetics, and overall user experience of design, whether it's for print or digital media. I've chosen <a href="https://fonts.google.com/specimen/Work+Sans?query=work+san" target="_blank" title="Work Sans">Work Sans</a> and <a href="https://fonts.google.com/specimen/Playfair+Display?query=play" target="_blank" title="Playfair Display">Playfair Display</a> from <a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a> as the primary font vessels for this project.</p>
+        </div>
+        <div class="font-family">
+          <h3 class="font-family__name heading heading--3">Playfair Display</h3>
+          <span class="font-family__author">by <a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a></span>
+          <ul class="font-family__weights serif">
+            <li><span class="font-weight--400">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">400</span></li>
+            <li><span class="font-weight--500">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">500</span></li>
+            <li><span class="font-weight--600">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">600</span></li>
+            <li><span class="font-weight--700">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">700</span></li>
+            <li><span class="font-weight--800">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">800</span></li>
+            <li><span class="font-weight--900">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">900</span></li>
+          </ul>
+        </div>
+        <div class="font-family">
+          <h3 class="font-family__name heading heading--3 sans-serif">Work Sans</h3> 
+          <span class="font-family__author">by <a href="https://fonts.google.com/" target="_blank" title="Google Fonts">Google Fonts</a></span>   
+          <ul class="font-family__weights">
+            <li><span class="font-weight--300">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">300</span></li>
+            <li><span class="font-weight--400">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">400</span></li>
+            <li><span class="font-weight--500">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">500</span></li>
+            <li><span class="font-weight--600">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">600</span></li>
+            <li><span class="font-weight--700">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">700</span></li>
+            <li><span class="font-weight--800">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">800</span></li>
+            <li><span class="font-weight--900">The Quick Brown Fox Jumps Over The Lazy Dog</span><span class="sans-serif">900</span></li>
+          </ul>
+        </div>
+      </section>
+      <section id="typesetting">
+        <div class="intro">
+          <h2 class="heading heading--2">Typesetting</h2>
+        </div>
         <div class="type-scale">
-          <div class="type-scale__sample heading heading--1">Heading One</div>
-          <div class="type-scale__ratio">4.209rem/58.92px</div>
+          <div class="type-scale__sample heading heading--1 font-weight--300">Heading One</div>
+          <div class="type-scale__ratio">4rem/56px</div>
+          <div class="type-scale__weight">300</div>
           <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample heading heading--2">Heading Two</div>
-          <div class="type-scale__ratio">3.157rem/44.20px</div>
+          <div class="type-scale__sample heading heading--2 font-weight--300">Heading Two</div>
+          <div class="type-scale__ratio">3rem/42px</div>
+          <div class="type-scale__weight">300</div>
           <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample heading heading--3">Heading Three</div>
-          <div class="type-scale__ratio">2.369rem/33.16px</div>
+          <div class="type-scale__sample heading heading--3 font-weight--300">Heading Three</div>
+          <div class="type-scale__ratio">2rem/28px</div>
+          <div class="type-scale__weight">300</div>
           <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample heading heading--4">Heading Four</div>
-          <div class="type-scale__ratio">1.777rem/24.88px</div>
+          <div class="type-scale__sample heading heading--4 font-weight--300">Heading Four</div>
+          <div class="type-scale__ratio">1.5rem/21px</div>
+          <div class="type-scale__weight">300</div>
           <div class="type-scale__family">Playfair Display</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample body-copy body-copy--500">Body Bold</div>
+          <div class="type-scale__sample body-copy font-weight--500">Body Bold</div>
           <div class="type-scale__ratio">1rem/14.00px</div>
+          <div class="type-scale__weight">500</div>
           <div class="type-scale__family">Work Sans</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample body-copy">Body</div>
+          <div class="type-scale__sample body-copy font-weight--300">Body</div>
           <div class="type-scale__ratio">1rem/14.00px</div>
+          <div class="type-scale__weight">300</div>
           <div class="type-scale__family">Work Sans</div>
         </div>
         <div class="type-scale">
-          <div class="type-scale__sample body-copy body-copy--500">Button & Meta</div>
-          <div class="type-scale__ratio">1.333rem/18.66px</div>
+          <div class="type-scale__sample body-copy body-copy--lg font-weight--500">Button & Meta</div>
+          <div class="type-scale__ratio">1.075rem/15.05px</div>
+          <div class="type-scale__weight">500</div>
           <div class="type-scale__family">Work Sans</div>
         </div>
       </section>
     </main>
     
     <footer>
-      <ul class="references">
-        <li>Box Shadow & Buttons by <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank" title="Box Shadow by CSS Scan">CSS Scan</a></li>
-        <li>Colour Palette by <a href="https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46" target="_blank" title="Colour Palette by Coolors">Coolors</a></li>
-        <li>General Inspo by <a href="https://elementor.com/blog/web-design-style-guide/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQjwoK2mBhDzARIsADGbjeqL1U2Ik6uxXdOrt3QuPmqxsYUQZm3oETeHU4Lz1Y6V9JUgqMuhtnoaAsuyEALw_wcB" target="_blank" title="General Inspo by Elementor">Elementor</a></li>
-        <li>Type Scale by <a href="https://typescale.com/" target="_blank" title="Type Scale by TypeScale">TypeScale</a></li>
-      </ul>
-      <p class="copyright">&copy; <span id='copyright-year'></span> Website Design System. All Rights Reserved.</p> 
-    </footer>
+      <div class="footer-content">
+        <ul class="references">
+          <li>Box Shadow & Buttons by <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank" title="Box Shadow by CSS Scan">CSS Scan</a></li>
+          <li>Colour Palette by <a href="https://coolors.co/cad2c5-84a98c-52796f-354f52-2f3e46" target="_blank" title="Colour Palette by Coolors">Coolors</a></li>
+          <li>General Inspo by <a href="https://elementor.com/blog/web-design-style-guide/?utm_source=google&utm_medium=cpc&utm_campaign=11138809851&utm_term=&gclid=Cj0KCQjwoK2mBhDzARIsADGbjeqL1U2Ik6uxXdOrt3QuPmqxsYUQZm3oETeHU4Lz1Y6V9JUgqMuhtnoaAsuyEALw_wcB" target="_blank" title="General Inspo by Elementor">Elementor</a></li>
+          <li>Type Scale by <a href="https://typescale.com/" target="_blank" title="Type Scale by TypeScale">TypeScale</a></li>
+        </ul>
+        <p class="copyright">&copy; <span id='copyright-year'></span> Website Design System. All Rights Reserved.</p> 
+      </div>
+      </footer>
     
     <script>
       var copyrightYearEl = document.getElementById('copyright-year') || false;
