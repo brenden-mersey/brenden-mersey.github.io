@@ -135,11 +135,29 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
-/* Section */
-section {
-  border: 1px solid hsl(0, 0%, 90%);
-  border-radius: 10px;
-  padding: 24px;
+/* Footer */
+footer {
+  font-size: 10px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer ul {
+  display: flex;
+  width: 100%;
+  height: auto;
+  gap: 12px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer p {
+  margin-top: 12px;
 }
 
 /* Main */
@@ -149,3 +167,14 @@ main {
   flex-flow: column;
   gap: 60px;
 }
+
+/* Section */
+section {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  /* border: 1px solid hsl(0, 0%, 95%); */
+  border-radius: 10px;
+  padding: 24px;
+}
+
