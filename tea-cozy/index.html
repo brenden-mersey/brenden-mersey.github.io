@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Tea Cozy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
+    
+  <body>
+    
+    <header class="header" id="header">
+      <div class="wrapper">
+        <div class="header__logo">
+          <img src="./img/img-tea-cozy-logo.png" alt="Tea Cozy Logo" width="264" height="84" />
+        </div> 
+        <nav class="header__nav">
+          <div class="header__nav-item">
+            <a class="header__nav-link" href="#mission" target="_self" title="Mission">Mission</a>
+          </div>
+          <div class="header__nav-item">
+            <a class="header__nav-link" href="#featured-tea" target="_self" title="Featured Tea">Featured Tea</a>
+          </div>
+          <div class="header__nav-item">
+            <a class="header__nav-link" href="#locations" target="_self" title="Locations">Locations</a>
+          </div>
+        </nav> 
+      </div>
+    </header>
+    
+    <main>       
+      
+      <section class="mission" id="mission">
+        <div class="mission__background-image">
+          <img src="./img/img-mission-background.jpg" alt="Mission Background" width="1200" height="800" />
+        </div>
+        <div class="mission__statement">
+          <h2>Our Mission</h2>
+          <h4>Handpicked, Artisanally Curate, Free Range, Sustainable, Small Batch, Fair Trade, Organic Trade</h4>
+        </div>
+      </section>
+      
+      <section class="featured-tea" id="featured-tea">
+        <div class="wrapper">
+          <h2>Tea of the Month</h2>
+          <h4>What's Steeping at the Tea Cozy</h4>
+          <div class="featured-tea__card-list">
+            
+            <div class="featured-tea__card">
+              <div class="featured-tea__image">
+                <img src="./img/img-berryblitz.jpg" alt="Fall Berry Blitz Tea" width="" height="" />
+              </div>
+              <strong class="featured-tea__title">Fall Berry Blitz Tea</strong>
+            </div>
+            
+            <div class="featured-tea__card">
+              <div class="featured-tea__image">
+                <img src="./img/img-spiced-rum.jpg" alt="Spiced Rum Tea" width="" height="" />
+              </div>
+              <strong class="featured-tea__title">Spiced Rum Tea</strong>
+            </div>
+            
+            <div class="featured-tea__card">
+              <div class="featured-tea__image">
+                <img src="./img/img-donut.jpg" alt="Seasonal Donuts" width="" height="" />
+              </div>
+              <strong class="featured-tea__title">Seasonal Donuts</strong>
+            </div>
+            
+            <div class="featured-tea__card">
+              <div class="featured-tea__image">
+                <img src="./img/img-myrtle-ave.jpg" alt="Myrtle Ave Tea" width="" height="" />
+              </div>
+              <strong class="featured-tea__title">Myrtle Ave Tea</strong>
+            </div>
+            
+            <div class="featured-tea__card">
+              <div class="featured-tea__image">
+                <img src="./img/img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea" width="" height="" />
+              </div>
+              <strong class="featured-tea__title">Bedford Bizarre Tea</strong>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+    </main>
+    
+    <footer>
+      <p class="copyright">&copy; <span id='copyright-year'></span> Tea Cozy</p> 
+    </footer>
+    
+    <script>
+      var copyrightYearEl = document.getElementById('copyright-year') || false;
+      var copyrightYear = new Date();
+      if ( copyrightYearEl ) {
+        copyrightYear = copyrightYear.getFullYear();
+        copyrightYearEl.innerText = copyrightYear;
+      } 
+      </script>
+      
+  </body>
+  
+</html>
