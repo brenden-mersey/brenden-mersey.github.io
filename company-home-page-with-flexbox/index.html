@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Daymarker Digital – Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
+  </head>
+
+  <body>
+
+    <header class="header" id="header">
+      <div class="header__container">
+        <h1 class="heading heading--1">Daymarker Digital</h1>
+      </div>
+    </header>
+
+    <main class="main" id="main">
+
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <p class="copyright">&copy; <span id="copyright-year"></span> Daymarker Digital. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      var copyrightYearEl = document.getElementById("copyright-year") || false;
+      var copyrightYear = new Date();
+      if ( copyrightYearEl ) {
+        copyrightYear = copyrightYear.getFullYear();
+        copyrightYearEl.innerText = copyrightYear;
+      }
+    </script>
+
+  </body>
+
+</html>
