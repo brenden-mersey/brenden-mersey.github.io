@@ -6,18 +6,17 @@ https://www.ribalta.pt/
 
 1. To complete this project, you should have completed Codecademy’s Flexbox curriculum in any of the following:
 
-  Full-Stack Engineering Career Path
-  Front-End Engineering Career Path
-  Learn How to Build Websites Skill Path
-  Project Requirements
+- [x] Full-Stack Engineering Career Path
+- [ ] Front-End Engineering Career Path
+- [ ] Learn How to Build Websites Skill Path
   
 2. You’re going to build a company homepage for a real or imagined company. You’ll get to decide exactly what content to include for this company, but you should at least include:
   
-  A title and logo or splash image.
-  A mission statement or brief description of the company.
-  A list or set of images and titles representing the product or products of the company.
-  A section describing some of the company’s employees or teammates.
-  If you want, you can tour our example site for inspiration or to see how we used flexbox. Your site will probably look very different from ours, and that’s great!
+- [x] A title and logo or splash image.
+- [x] A mission statement or brief description of the company.
+- [A] A list or set of images and titles representing the product or products of the company.
+- [ ] A section describing some of the company’s employees or teammates.
+- [ ] If you want, you can tour our example site for inspiration or to see how we used flexbox. Your site will probably look very different from ours, and that’s great!
 
 3. Your project should use flexbox styling for layout. Aim to use flexbox’s advantages, such as easy horizontal and vertical positioning, flexible element flows as the page size changes, and great styling for repeated elements.
   
