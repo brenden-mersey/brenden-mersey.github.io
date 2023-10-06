@@ -1,7 +1,9 @@
 :root {
+
   --theme-colour--red: #862041;
   --theme-colour--black: #231f20;
   --theme-colour--beige: #f8f2e7;
+
 }
 
 * {
@@ -47,7 +49,26 @@ footer {
 
 }
 
-/* Block */
+/** AOS ---------------------------------------- **/
+
+[data-aos="fade-up"] {
+  transform: translate3d( 0, 8px, 0 );
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d( -8px, 0, 0 );
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d( 0, -8px, 0 );
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d( 8px, 0, 0 );
+}
+
+/** Block ---------------------------------------- **/
+
 .block {
   width: 100%;
   height: auto;
@@ -56,17 +77,41 @@ footer {
   overflow: hidden;
 }
 
-/* About Us */
+/** About Us ---------------------------------------- **/
 .about-us {
   height: var(--theme-viewport-height--total);
 }
 
 .about-us__content {
   grid-column: 2 / 6;
+  margin-top: 10vw;
 }
 
-/* Grid */
-.grid-container {
+@media screen and (min-width: 768px) {
+
+  .about-us__content {
+    grid-column: 3 / 11;
+    column-count: 2;
+    column-gap: 20px;
+    margin-top: 5vw;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .about-us__content {
+    grid-column: 4 / 10;
+    column-gap: 24px;
+    margin-top: 6vw;
+  }
+
+}
+
+/** Grid Container ---------------------------------------- **/
+
+.grid-container,
+.grid-container-fluid {
   column-gap: 20px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -76,6 +121,32 @@ footer {
 .grid-container,
 .grid-container-fluid {
   padding: 0 26px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .grid-container,
+  .grid-container-fluid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 768px - (2 * 26px) );
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .grid-container,
+  .grid-container-fluid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 1200px - (2 * 26px) );
+  }
+
 }
 
 /* Feature Image */
@@ -123,14 +194,6 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
-  /* About Us */
-  .about-us__content {
-    grid-column: 4 / 10;
-    column-count: 2;
-    column-gap: 25px;
-  }
-
   /* Grid */
   .grid-container {
     grid-template-columns: repeat(12, 1fr);

@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
   <head>
-    <title>Daymarker Digital – Homepage</title>
+
+    <title>Daymarker Digital - Company Home Page with Flexbox</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+
+    <script>
+      (function(html){
+        html.className = "js";
+        html.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
+      })(document.documentElement);
+    </script>
+
   </head>
 
   <body>
@@ -18,8 +33,8 @@
 
     <main class="main" id="main">
 
-      <section class="block block--hero hero">
-        <div class="hero__brand">
+      <section class="block block--hero hero" id="hero">
+        <div class="hero__brand" data-aos-anchor="#hero" data-aos="fade-down" data-aos-duration="2000">
           <svg width="100%" viewBox="0 0 129 48" fill="currentcolor">
             <g fill-rule="evenodd">
               <path d="M12.7.4c3.6-.7 6.8-.5 9.8.5 1.2.4 2.3 1 3.3 1.7a7.1 7.1 0 011 10.8c-1.5 1.9-3.7 3.1-6.5 3.8l-1.3.3-1.2.3.4.3c2 1.6 2.4 3.9 2.6 6.4a105.4 105.4 0 01.3 4.2c0 1 .5 1.3.9 1.5.3.2.9.3 1.7-.2a8.6 8.6 0 003-3l1.8-3 1-1.8c0-.2.2-.3.3-.4l.2-.4.6-1.3 1.6-3.2 1-2.3v-.1l.1-.2h1.1l1.3.6 1 1 .3 1-.3.6-2 3.6-.5.7a89.8 89.8 0 00-3.7 7v.2c-.2.5-.4 1.2-.3 1.7 0 .3.1.4.3.5l.5.1a3 3 0 001.2-.4h.1l1.3-.8 2.2-2 2-2.3c1-1.1 2-2.2 2.6-3.6l1.3-3 1.9-4.3 4.2-9.7.1-.3 1-2.8h.1l.3-.1h.7l1.4.7c.5.3.9.6 1.1 1 .3.4.4.8.3 1.1l-.4 1-1.6 3.5-3 7 .7-.5 1.7-1c1-.5 2.2-.7 3.2-.6.8 0 1.4.2 1.9.5s.9.6 1.2 1c.3.4.5.8.6 1.3a6.8 6.8 0 01.2 3l-.3 1.5a20.4 20.4 0 01-4.1 8.2c-1 1.1-2.1 2-3.3 2.8a8.2 8.2 0 01-3.8 1.2c-1.5 0-3.6-.6-4.6-2l-.2-.3-.2.4L40 33c-.2.2-.5.4-.8.4h-3.7l.2-.5 2.4-5.6-1 1a28.7 28.7 0 01-4.4 4 6.8 6.8 0 01-2.4 1h-1.3c-1 0-1.5-.2-2-.7-.4-.6-.6-1.4-.5-2.4v-.7l-.5.6-.7.7a7.6 7.6 0 01-3.8 2.3c-1.5.3-2.7.1-3.6-.5-1-.7-1.5-2-1.6-3.7l-.2-2.5c0-1.2 0-2.5-.2-3.7 0-1-.3-2-.7-3-.7-1.3-2-1.4-3.1-1.4-.4 0-.7.6-.7.7-1.5 3.2-4.3 9.1-6.2 13.5-.3.6-.5.8-1 .8H0l.2-.6.8-1.8.5-1 3.7-8.1 5.8-11.9a15 15 0 012.7-3.5c1-1 2-1.7 3.2-2 .2 0 .9 0 1 .3l-.1.2c-1.2 1.4-1.9 3-2.5 4.7l-.6 1.5-1.4 3.5-.7 1.6v.3h.2c4.5.5 8.2-.9 10.4-3.9a7 7 0 001-6.5c-.7-2-2.5-3.5-4.8-4.1C14.1.6 8.1 2.8 5 7.5a9.2 9.2 0 00-1 9v.5h-.4C1.8 17 .3 15.5 0 13.4-.2 11 .5 9 2.2 6.6 4.8 3.2 8.3 1 12.7.4zm90.7 1.5h.7l1.6.7c.5.3 1 .7 1.2 1 .3.4.4.8.3 1.1a42.3 42.3 0 01-1.3 2.6l-.3.5.6-.1a26.7 26.7 0 018.3-.8c0 .6-.2 1.1-.6 1.5-.3.4-.7.5-1.2.5a52.5 52.5 0 01-2.2 0 21.9 21.9 0 00-5.9 1h-.1v.1l-2.7 5-.2.4-.6 1a131.7 131.7 0 00-5.4 11.5l-.4 1.5V31c.1.2.4.4.6.4h.3a9.5 9.5 0 003.4-2.3 16.4 16.4 0 002-2.2c0-.8.3-1.5.7-2.3a19.3 19.3 0 019.5-9.8 9 9 0 015.3-.4c.5.1 1 .4 1.3.7.4.3.7.7.9 1.2l.4 1.4v1.6l-.2.2-.6.2-.6-.1c-.1 0-.2-.1-.2-.3v-.1-.2-.3l-.2-1a4 4 0 00-.4-1.2c-.3-.4-.8-.8-1.4-1.1l-.7-.1a3 3 0 00-1 .1l-1 .5a8.5 8.5 0 00-2 1.6 15.5 15.5 0 00-2 2.4l-1 1.4c-1.8 3-2.7 6.3-2.2 8.1.2.6.5 1.1 1 1.4 1.8 1 5.3-1.5 7.9-5.8 1-1.7 1.7-3.3 2-4.9l.5.1c.5.2 1 .4 1.4.8.5.3.8.7 1 1 .4.5.4.8.3 1.2l-.2.5-.3.6A41 41 0 00118 29l-.1 1.3c0 .7 0 1 .2 1v.2h.5c.8-.3 1.6-.7 2.3-1.3l2-2a26.8 26.8 0 003.2-4.7l.4-.6.3-.5H127.7c.2 0 .3.2.4.3a13.7 13.7 0 00-1 1.6c-.7 1.3-1.6 2.6-2.6 4a20.7 20.7 0 01-4.2 4 7 7 0 01-2.1 1c-.5.2-1 .2-1.5.2-1.3-.1-2.2-.5-2.7-1.1-.6-.6-.8-1.4-.8-2.2v-1.2l-.5.4a24.3 24.3 0 01-3.2 2.7l-1.7.9c-.6.2-1.1.3-1.7.3-1 0-1.7-.3-2.3-.6l-1.5-1.2-.8-1.5v-.2l-.1-.6-.5.5-.4.5a16.4 16.4 0 01-2.6 2.2 8.4 8.4 0 01-3.9 1.1c-1 0-1.8-.4-2.3-1-.5-.6-.7-1.4-.7-2.3v-.7l.1-1-.9 1.3c-.9 1.3-1.9 2.6-3.4 3.2-.8.4-3 1-4.8 0H82a4 4 0 01-1.4-1.5c-.3-.6-.5-1.3-.6-2v-.7l-.5.3a51.8 51.8 0 01-4.7 3.8l-1.3.4c-.4.2-.9.2-1.4.2-1.3-.1-2.2-.5-2.7-1.1-.6-.6-.8-1.4-.8-2.2v-1.2l-.5.4a23.6 23.6 0 01-3.2 2.7L63 33l-1.7.3c-1 0-1.7-.3-2.3-.6l-1.5-1.2c-.4-.5-.6-1-.8-1.5a5.6 5.6 0 01-.1-2.7c0-.8.3-1.7.8-2.6a19.5 19.5 0 019.5-9.8 9 9 0 015.3-.4c.5.1 1 .4 1.3.7.4.3.7.7.9 1.2l.4 1.4v1.6l-.2.2-.6.2-.6-.1c-.1 0-.2-.1-.2-.3v-.1-.2-.3l-.2-1a4 4 0 00-.4-1.2c-.3-.4-.8-.8-1.4-1.1l-.8-.1a3 3 0 00-.9.1l-1 .5-1 .7a12.3 12.3 0 00-2 2 19 19 0 00-2 2.7c-1.9 3-2.7 6.3-2.2 8.1.2.6.5 1.1 1 1.4 1.8 1 5.3-1.5 7.9-5.8 1-1.7 1.7-3.3 2-4.9l.5.1c.5.2 1 .4 1.4.8l1 1c.3.5.4.8.3 1.2l-.2.5-.3.6a40.3 40.3 0 00-1.7 4.6l-.1 1.3.1 1s.2.3.6.2c.8-.1 1.6-.7 2.4-1.3 1-.7 2-1.7 3.4-3.2h.1v-.2c.1-1.7.5-3.6 1-5.6a46.4 46.4 0 015-10.4 46.7 46.7 0 015.4-7c.8-.7 1.5-1.1 2-1.3h.7l.4.5c.5.7.8 1.7.8 2.7.1.9 0 1.8-.1 2.6a13.4 13.4 0 01-1.6 4.4 58.5 58.5 0 01-8.8 11.5l-.2.4v.5a26.7 26.7 0 00-.5 2.5c0 1.2 0 2.3.2 3.4.2.8.7 1.3 1.4 1.3.3 0 .6-.2.8-.3.9-.5 1.5-1.3 2.2-2.2a33.3 33.3 0 004-6.5l1-1.6v-.2l1.6-3.1 1.4-2.5.5-1 .7-1.5.5-1-.7.5-1.3.7c-.3.2-.7.4-1.1.4h-.4a.4.4 0 01-.2-.4v-.1l.4-.4a16.9 16.9 0 012.1-1.5l2-1.1h.2l.3-.8a400 400 0 002.2-4.6l1.3-3 .3-.1zM53.9 16.3c-1.5-1-4 .6-5.1 1.3-1.4 1-2.7 2.2-3.8 3.8-.7 1-3 4.8-1.5 8.2.4 1 1.2 1.6 2 1.6h.2c.5 0 1-.2 1.3-.3 3.9-1.7 6.3-6.6 7.3-10.4l.3-1.7c.2-1.2 0-2.1-.7-2.5zM93 5.7h-.6L91.2 7l-2 3a64.2 64.2 0 00-4.2 9.4c-.2.6-.6 1.3-.6 2 0 .3.5-.1.6-.2l1-1.1 1-1.2a40.6 40.6 0 004.3-7c.7-1.4 1.3-2.6 1.6-3.6.4-1 .5-1.7.5-2.1 0-.2-.1-.4-.3-.5zm-55.8.8l.8.2a7.4 7.4 0 012 1.5c.4.5.2 1-.3 1.7a18 18 0 00-1.7 3H37.8c-.7-.5-1.7-1-1.8-1.7v-.4l.5-1.8.6-2.4.2-.1z"></path>
@@ -30,29 +45,93 @@
         </div>
       </section>
 
-      <section class="block block--feature-image feature-image">
+      <section class="block block--feature-image feature-image" id="feature-image">
         <div class="grid-container">
-          <figure class="feature-image__image">
-            <picture>
-              <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
-            </picture>
+          <figure class="feature-image__image" data-aos-anchor="#feature-image" data-aos="fade-up">
+            <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
           </figure>
         </div>
       </section>
 
-      <section class="block block--about-us about-us">
+      <section class="block block--about-us about-us" id="about-us">
         <div class="grid-container">
-
-          <div class="about-us__content">
-            <p>A Ribalta is a traditional pizzeria no Gourmet Experience from El Corte Inglés. In this space's intimate environment, go and find the comfort that an Italian restaurant can provide. Feel strangely and delighted with the decoration of Italian-inspired references, such as printed letters, paintings with decorations on walls, or tiles with azulejo; like the heat and warmth that emanates from our slow oven and, of course, like the classic meadows that are served here. Check out your favorite environment: off the balcony, right in the packing area; our sofas or our outdoor seating area. Everyone will find the perfect dinner to enjoy this genuine refreshment.</p>
+          <div class="about-us__content" data-aos-anchor="#about-us" data-aos="fade-left" data-aos-delay="250">
+            <p>A Ribalta is a traditional pizzeria no Gourmet Experience from El Corte Inglés. In this spaces intimate environment, go and find the comfort that an Italian restaurant can provide. Feel strangely and delighted with the decoration of Italian-inspired references, such as printed letters, paintings with decorations on walls, or tiles with azulejo; like the heat and warmth that emanates from our slow oven and, of course, like the classic meadows that are served here. Check out your favorite environment: off the balcony, right in the packing area; our sofas or our outdoor seating area. Everyone will find the perfect dinner to enjoy this genuine refreshment.</p>
           </div>
-
+          <h1 class="about-us__heading" data-aos-anchor="#about-us" data-aos="fade-up" data-aos-delay="500">Welcome to Ribalta</h1>
+          <p class="about-us__tagline" data-aos-anchor="#about-us" data-aos="fade-up" data-aos-delay="650">The taste of Italy in every bite.</p>
         </div>
       </section>
 
-      <section class="block block--feature-image feature-image offset-left"></section>
+      <section class="block block--gallery gallery">
+        <div class="grid-container">
+          <div class="gallery__items flex">
 
-      <section class="block block--feature-image feature-image offset-right"></section>
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-01" data-aos-anchor="#gallery-image-01" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-02" data-aos-anchor="#gallery-image-02" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-03" data-aos-anchor="#gallery-image-03" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-04" data-aos-anchor="#gallery-image-04" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-05" data-aos-anchor="#gallery-image-05" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-07" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-08" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+            <div class="gallery__item flex__item">
+              <figure class="feature-image__image" id="gallery-image-09" data-aos-anchor="#gallery-image-09" data-aos="fade-up">
+                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="block block--contact-us"></section>
 
     </main>
 
@@ -65,11 +144,21 @@
 
     <script>
 
+      AOS.init({
+        offset: 175,
+        delay: 250,
+        duration: 750,
+        easing: 'ease-in-out-cubic',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+      });
+
       function setViewportHeightCSSVar() {
-        document.documentElement.style.setProperty( '--theme-viewport-height--total', window.innerHeight + 'px' );
+        document.documentElement.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
       }
 
-      var copyrightYearEl = document.getElementById("copyright-year") || false;
+      var copyrightYearEl = document.getElementById( "copyright-year" );
       var copyrightYear = new Date();
       if ( copyrightYearEl ) {
         copyrightYear = copyrightYear.getFullYear();
@@ -78,9 +167,14 @@
 
       setViewportHeightCSSVar();
 
-      window.addEventListener( 'resize', () => {
+      window.addEventListener( "resize", function(event) {
         setViewportHeightCSSVar();
       });
+
+      setTimeout(function() {
+        console.log("Timeout done @ 500ms")
+        AOS.refresh();
+      }, 500);
 
     </script>
 
