@@ -77,80 +77,72 @@
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-01" data-aos-anchor="#gallery-image-01" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-01--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-01--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-02" data-aos-anchor="#gallery-image-02" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-02--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-02--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-03" data-aos-anchor="#gallery-image-03" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-03--ESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-03--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-04" data-aos-anchor="#gallery-image-04" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-04--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-04--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-05" data-aos-anchor="#gallery-image-05" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-05--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-05--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+                <a href="./img/gallery/gallery-06--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-06--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+              <figure class="feature-image__image" id="gallery-image-07" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
+                <a href="./img/gallery/gallery-07--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-07--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-07" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+              <figure class="feature-image__image" id="gallery-image-08" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
+                <a href="./img/gallery/gallery-08--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-08--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-08" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
-                </a>
-              </figure>
-            </div>
-
-            <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-09" data-aos-anchor="#gallery-image-09" data-aos="fade-up">
-                <a href="./img/gallery/">
-                  <img loading="lazy" src="./img/gallery/" />
+              <figure class="feature-image__image" id="gallery-image-09" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
+                <a href="./img/gallery/gallery-09--RESIZED.jpg">
+                  <img loading="lazy" src="./img/gallery/gallery-09--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
@@ -172,20 +164,6 @@
 
     <script>
 
-      AOS.init({
-        offset: 175,
-        delay: 250,
-        duration: 750,
-        easing: 'ease-in-out-cubic',
-        once: false,
-        mirror: false,
-        anchorPlacement: 'top-bottom',
-      });
-
-      lightGallery(document.getElementById('lightgallery'), {
-        plugins: [ lgZoom, lgThumbnail ],
-        speed: 500,
-      });
 
       function setViewportHeightCSSVar() {
         document.documentElement.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
@@ -204,10 +182,29 @@
         setViewportHeightCSSVar();
       });
 
-      setTimeout(function() {
-        console.log("Timeout done @ 500ms")
-        AOS.refresh();
-      }, 500);
+      window.addEventListener( "load", function(event) {
+
+        AOS.init({
+          offset: 175,
+          delay: 250,
+          duration: 750,
+          easing: 'ease-in-out-cubic',
+          once: false,
+          mirror: false,
+          anchorPlacement: 'top-bottom',
+        });
+
+        lightGallery(document.getElementById('lightgallery'), {
+          plugins: [ lgZoom, lgThumbnail ],
+          speed: 500,
+          mode: 'lg-fade',
+        });
+
+        setTimeout(function() {
+          AOS.refresh();
+        }, 500);
+
+      });
 
     </script>
 
