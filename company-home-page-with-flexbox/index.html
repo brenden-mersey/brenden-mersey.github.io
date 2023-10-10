@@ -12,12 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.min.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
 
     <script>
       (function(html){
@@ -69,67 +71,87 @@
         </div>
       </section>
 
-      <section class="block block--gallery gallery">
+      <section class="block block--gallery gallery" id="lightgallery">
         <div class="grid-container">
           <div class="gallery__items flex">
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-01" data-aos-anchor="#gallery-image-01" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-02" data-aos-anchor="#gallery-image-02" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-03" data-aos-anchor="#gallery-image-03" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-04" data-aos-anchor="#gallery-image-04" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-05" data-aos-anchor="#gallery-image-05" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-07" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-08" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
               <figure class="feature-image__image" id="gallery-image-09" data-aos-anchor="#gallery-image-09" data-aos="fade-up">
-                <img loading="lazy" src="./img/feaute-image-01.webp" alt="Restaurant Interior" width="1329" height="747" />
+                <a href="./img/gallery/">
+                  <img loading="lazy" src="./img/gallery/" />
+                </a>
               </figure>
             </div>
 
@@ -158,6 +180,11 @@
         once: false,
         mirror: false,
         anchorPlacement: 'top-bottom',
+      });
+
+      lightGallery(document.getElementById('lightgallery'), {
+        plugins: [ lgZoom, lgThumbnail ],
+        speed: 500,
       });
 
       function setViewportHeightCSSVar() {
