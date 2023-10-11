@@ -144,6 +144,34 @@ footer {
   height: var(--theme-viewport-height--total);
 }
 
+/** Gallery ---------------------------------------- **/
+
+.gallery {}
+
+.gallery__item {
+  width: 100%;
+  aspect-ratio: 5/3;
+  height: auto;
+}
+
+.gallery__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery__listing {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  column-gap: 15px;
+  row-gap: 15px;
+  align-items: center;
+}
+
 /** Grid Container ---------------------------------------- **/
 
 .grid-container,
