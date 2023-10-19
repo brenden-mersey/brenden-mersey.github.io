@@ -95,11 +95,26 @@ footer {
   overflow: hidden;
 }
 
+/** Body Copy ---------------------------------------- **/
+
+.body-copy--primary {}
+
+.body-copy--lg {}
+
+.body-copy--md {}
+
+.body-copy--sm {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
+
 /** About Us ---------------------------------------- **/
 
 .about-us__content {
   grid-column: 2 / 6;
   margin-top: 38px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,6 +134,7 @@ footer {
     grid-column: 4 / 10;
     column-gap: 24px;
     margin-top: 78px;
+    font-size: 14px;
   }
 
 }
@@ -137,6 +153,52 @@ footer {
   display: block;
 }
 
+/** Footer  ---------------------------------------- **/
+
+.footer {
+  background: var(--theme-colour--red);
+  color: var(--theme-colour--beige);
+  padding: 36px 0;
+  margin-top: 82px;
+}
+
+.footer__contact {
+  grid-column: 1 / -1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  row-gap: 30px;
+}
+
+.footer__contact-item {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.footer__legal {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+  .footer {
+    padding: 46px 0;
+    margin-top: 142px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .footer {
+    padding: 56px 0;
+    margin-top: 182px;
+  }
+
+}
 
 /** Full Viewport Height  ---------------------------------------- **/
 
@@ -146,19 +208,41 @@ footer {
 
 /** Gallery ---------------------------------------- **/
 
-.gallery {}
+.gallery__heading {
+  color: var(--theme-colour--red);
+  text-align: center;
+  grid-column: 1 / -1;
+  font-size: 34px;
+}
 
-.gallery__item {
+.gallery__heading + .gallery__listing {
+  margin-top: 26px;
+}
+
+.gallery__image {
   width: 100%;
   aspect-ratio: 5/3;
   height: auto;
 }
 
-.gallery__item img {
+.gallery__image img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery__item {
+  width: 100%;
+}
+
+.gallery__link {
+  transition: opacity 280ms;
+  opacity: 1;
+}
+
+.gallery__link:hover {
+  opacity: 0.5;
 }
 
 .gallery__listing {
@@ -170,6 +254,44 @@ footer {
   column-gap: 15px;
   row-gap: 15px;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .gallery__heading {
+    font-size: 36px;
+  }
+
+  .gallery__heading + .gallery__listing {
+    margin-top: 30px;
+  }
+
+  .gallery__item {
+    width: 48%;
+    width: calc((100% - 15px) * 0.5);
+  }
+
+  .gallery__listing {
+    flex-flow: row wrap;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .gallery__heading {
+    font-size: 40px;
+  }
+
+  .gallery__heading + .gallery__listing {
+    margin-top: 34px;
+  }
+
+  .gallery__item {
+    width: 32%;
+    width: calc((100% - 30px) * 0.3333);
+  }
+
 }
 
 /** Grid Container ---------------------------------------- **/
@@ -217,6 +339,73 @@ footer {
 
 }
 
+/** Heading ---------------------------------------- **/
+
+.heading {}
+
+.heading--primary {
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.heading--xl {
+  font-size: calc( 16px + 1vw );
+}
+
+.heading--lg {
+  font-size: calc( 12px + 1vw );
+}
+
+.heading--md {
+  font-size: calc( 8px + 1vw );
+}
+
+.heading--sm {
+  font-size: calc( 4px + 1vw );
+}
+
+@media screen and (min-width: 768px) {
+
+  .heading--xl {
+    font-size: calc( 18px + 1vw );
+  }
+
+  .heading--lg {
+    font-size: calc( 14px + 1vw );
+  }
+
+  .heading--md {
+    font-size: calc( 10px + 1vw );
+  }
+
+  .heading--sm {
+    font-size: calc( 6px + 1vw );
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .heading--xl {
+    font-size: calc( 20px + 1vw );
+  }
+
+  .heading--lg {
+    font-size: calc( 16px + 1vw );
+  }
+
+  .heading--md {
+    font-size: calc( 12px + 1vw );
+  }
+
+  .heading--sm {
+    font-size: calc( 8px + 1vw );
+  }
+
+}
+
 /** Hero ---------------------------------------- **/
 
 .hero {
@@ -252,15 +441,11 @@ footer {
 }
 
 .hero__heading {
-  font-size: calc( 20px + 10vw );
+  font-size: calc( 32px + 10vw );
   line-height: 1;
 }
 
 .hero__tagline {
-  font-size: calc( 6px + 1vw );
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 500;
   display: inline-flex;
   align-items: center;
   column-gap: 5px;

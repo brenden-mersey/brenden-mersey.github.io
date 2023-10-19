@@ -5,20 +5,21 @@
 
     <title>Daymarker Digital - Company Home Page with Flexbox</title>
 
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
 
     <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/combine/npm/lightgallery@2.7.2,npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js,npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
 
     <script>
       (function(html){
@@ -40,7 +41,7 @@
         <div class="grid-container">
           <div class="hero__content">
             <h1 class="hero__heading typography--script" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="1250">Ribalta</h1>
-            <p class="hero__tagline" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Pizzeria Tradizionale</p>
+            <p class="hero__tagline heading--primary heading--md" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Pizzeria Tradizionale</p>
           </div>
         </div>
       </section>
@@ -56,7 +57,7 @@
       <section class="block block--about-us about-us" id="about-us">
         <div class="grid-container">
           <div class="about-us__content" data-aos-anchor="#about-us" data-aos="fade-left" data-aos-delay="250">
-            <p>A Ribalta is a traditional pizzeria no Gourmet Experience from El Corte Inglés. In this spaces intimate environment, go and find the comfort that an Italian restaurant can provide. Feel strangely and delighted with the decoration of Italian-inspired references, such as printed letters, paintings with decorations on walls, or tiles with azulejo; like the heat and warmth that emanates from our slow oven and, of course, like the classic meadows that are served here. Check out your favorite environment: off the balcony, right in the packing area; our sofas or our outdoor seating area. Everyone will find the perfect dinner to enjoy this genuine refreshment.</p>
+            <p>Nestled in Naples, Ribalta is an unassuming gem. Its rustic charm, vintage decor, and wood-fired oven offer an authentic Italian experience. The pizzas are works of art, meticulously crafted by expert pizzaiolos. Ribalta's Margherita and Vesuvio pizzas stand out, with a perfect blend of San Marzano tomatoes, creamy mozzarella, and a fiery kick. The warm staff treats guests like family, making personalized recommendations. Live Neapolitan music adds to the ambiance, transporting diners to the heart of Italy. Ribalta's dessert menu, featuring tiramisu and panna cotta, provides a sweet ending to a memorable meal. In Ribalta, tradition, flavor, and community come together to celebrate Italy's culinary heritage.</p>
           </div>
         </div>
       </section>
@@ -72,75 +73,78 @@
 
       <section class="block block--gallery gallery">
         <div class="grid-container">
+
+          <strong class="gallery__heading typography--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-left">la Galleria</strong>
+
           <div class="gallery__listing flex" id="lightgallery">
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-01" data-aos-anchor="#gallery-image-01" data-aos="fade-up">
-                <a href="./img/gallery/gallery-01--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-01" data-aos-anchor="#gallery-image-01" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-01--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-01--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-02" data-aos-anchor="#gallery-image-02" data-aos="fade-up">
-                <a href="./img/gallery/gallery-02--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-02" data-aos-anchor="#gallery-image-02" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-02--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-02--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-03" data-aos-anchor="#gallery-image-03" data-aos="fade-up">
-                <a href="./img/gallery/gallery-03--ESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-03" data-aos-anchor="#gallery-image-03" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-03--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-03--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-04" data-aos-anchor="#gallery-image-04" data-aos="fade-up">
-                <a href="./img/gallery/gallery-04--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-04" data-aos-anchor="#gallery-image-04" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-04--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-04--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-05" data-aos-anchor="#gallery-image-05" data-aos="fade-up">
-                <a href="./img/gallery/gallery-05--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-05" data-aos-anchor="#gallery-image-05" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-05--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-05--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <a href="./img/gallery/gallery-06--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-06" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-06--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-06--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-07" data-aos-anchor="#gallery-image-06" data-aos="fade-up">
-                <a href="./img/gallery/gallery-07--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-07" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-07--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-07--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-08" data-aos-anchor="#gallery-image-07" data-aos="fade-up">
-                <a href="./img/gallery/gallery-08--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-08" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-08--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-08--CROPPED.jpg" />
                 </a>
               </figure>
             </div>
 
             <div class="gallery__item flex__item">
-              <figure class="feature-image__image" id="gallery-image-09" data-aos-anchor="#gallery-image-08" data-aos="fade-up">
-                <a href="./img/gallery/gallery-09--RESIZED.jpg">
+              <figure class="gallery__image" id="gallery-image-09" data-aos-anchor="#gallery-image-09" data-aos="fade-up">
+                <a class="gallery__link" href="./img/gallery/gallery-09--RESIZED.jpg">
                   <img loading="lazy" src="./img/gallery/gallery-09--CROPPED.jpg" />
                 </a>
               </figure>
@@ -150,14 +154,45 @@
         </div>
       </section>
 
-      <section class="block block--contact-us"></section>
+      <section class="block block--contact-us">
+
+
+      </section>
 
     </main>
 
     <footer class="footer" id="footer">
-      <div class="footer__container">
-        <p class="copyright">&copy; <span id="copyright-year"></span> Daymarker Digital. All Rights Reserved.</p>
-        <p>https://www.ribalta.pt/</p>
+      <div class="grid-container">
+
+        <div class="footer__contact">
+          <div class="footer__contact-item">
+            <strong class="heading--primary heading--sm">Address</strong>
+            <div>
+              Via Michele Mazzella, 70
+              Ischia Napoli, Napoli, 80077
+            </div>
+          </div>
+          <div class="footer__contact-item">
+            <strong class="heading--primary heading--sm">Hours</strong>
+            <div>
+              Mon to Thurs: 12pm to 11pm
+              Fri and Sat: 12pm to Midnight
+              Sunday: Closed
+            </div>
+          </div>
+          <div class="footer__contact-item">
+            <strong class="heading--primary heading--sm">Contact</strong>
+            <div>
+              <a href="tel:081 333 6111">081 333 6111</a>
+              <a href="mailto:ciao@ribalta.it">ciao@ribalta.it</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__legal">
+          <p class="footer__copyright">&copy; <span id="copyright-year"></span> Daymarker Digital. All Rights Reserved.</p>
+        </div>
+
       </div>
     </footer>
 
@@ -188,15 +223,16 @@
           delay: 250,
           duration: 750,
           easing: 'ease-in-out-cubic',
-          once: false,
+          once: true,
           mirror: false,
           anchorPlacement: 'top-bottom',
         });
 
-        lightGallery(document.getElementById('lightgallery'), {
+        lightGallery(document.getElementById("lightgallery"), {
           plugins: [ lgZoom, lgThumbnail ],
           speed: 500,
           mode: 'lg-fade',
+          selector: '.gallery__link',
         });
 
         setTimeout(function() {

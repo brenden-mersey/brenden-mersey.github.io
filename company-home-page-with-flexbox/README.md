@@ -14,7 +14,7 @@ https://www.ribalta.pt/
   
 - [x] A title and logo or splash image.
 - [x] A mission statement or brief description of the company.
-- [A] A list or set of images and titles representing the product or products of the company.
+- [x] A list or set of images and titles representing the product or products of the company.
 - [ ] A section describing some of the company’s employees or teammates.
 - [ ] If you want, you can tour our example site for inspiration or to see how we used flexbox. Your site will probably look very different from ours, and that’s great!
 
