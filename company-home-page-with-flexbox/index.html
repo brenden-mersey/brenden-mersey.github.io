@@ -13,6 +13,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet">
+    <link href="./typography.css" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -30,17 +31,16 @@
 
   </head>
 
-  <body class="typography--sans-serif">
+  <body class="font-family--sans-serif">
 
-    <header class="header" id="header">
-    </header>
+    <header class="header" id="header"></header>
 
     <main class="main" id="main">
 
       <section class="block block--hero hero full-viewport-height" id="hero">
         <div class="grid-container">
           <div class="hero__content">
-            <h1 class="hero__heading typography--script" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="1250">Ribalta</h1>
+            <h1 class="hero__heading font-family--script" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="1250">Ribalta</h1>
             <p class="hero__tagline heading--primary heading--md" data-aos-anchor="#hero" data-aos="fade-up" data-aos-duration="750" data-aos-delay="500">Pizzeria Tradizionale</p>
           </div>
         </div>
@@ -65,16 +65,64 @@
       <section class="block block--welcome welcome full-viewport-height" id="welcome">
         <div class="grid-container">
           <div class="welcome__content">
-            <h1 class="welcome__heading" data-aos-anchor="#welcome" data-aos="fade-up" data-aos-delay="250">Welcome to <span class="typography--script">Ribalta</span></h1>
+            <h1 class="welcome__heading" data-aos-anchor="#welcome" data-aos="fade-down" data-aos-delay="250">Welcome to <span class="welcome__heading-logo font-family--script">Ribalta</span></h1>
             <p class="welcome__tagline" data-aos-anchor="#welcome" data-aos="fade-up" data-aos-delay="500">A taste of Italy in every bite.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="block block--kitchen kitchen">
+        <div class="grid-container">
+
+          <strong class="kitchen__heading font-family--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-down">yes chef</strong>
+
+          <div class="kitchen__listing">
+
+            <div class="kitchen__item" id="kitchen-item-01">
+              <figure class="kitchen__staff-photo" data-aos-anchor="#kitchen-item-01" data-aos="fade-up">
+                <img src="./img/chef/chef-carmy-01.jpg" alt="Chef Carmen 'Carmy' Berzatto" width="1000" height="700" />
+              </figure>
+              <div class="kitchen__staff-details">
+                <strong class="kitchen__staff-name heading--primary" data-aos-anchor="#kitchen-item-01" data-aos="fade-left" data-aos-delay="250">Chef Carmen "Carmy" Berzatto</strong>
+                <div class="kitchen__staff-bio" data-aos-anchor="#kitchen-item-01" data-aos="fade-left" data-aos-delay="500">
+                  <p>Meet the award-winning culinary maestro, Chef Carmen. With a quiet intensity, keen observation, and unwavering focus, Carmen has carved a remarkable path in the culinary world. Their ability to harness flavors, textures, and techniques is nothing short of an art form. Beyond the accolades, Carmen is a humble and introspective soul, finding inspiration in the subtle nuances of ingredients. This dedication to the craft and their resolute quest for culinary perfection has earned them the highest accolades, making Chef Carmen a revered name in the culinary realm.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="kitchen__item" id="kitchen-item-02">
+              <figure class="kitchen__staff-photo" data-aos-anchor="#kitchen-item-02" data-aos="fade-up">
+                <img src="./img/chef/chef-sydney-01.jpg" alt="Sydney 'Syd' Adamu" width="1000" height="700" />
+              </figure>
+              <div class="kitchen__staff-details">
+                <strong class="kitchen__staff-name heading--primary" data-aos-anchor="#kitchen-item-02" data-aos="fade-left" data-aos-delay="250">Sydney "Syd" Adamu</strong>
+                <div class="kitchen__staff-bio" data-aos-anchor="#kitchen-item-02" data-aos="fade-left" data-aos-delay="500">
+                    <p>Meet Chef Sydney, an ambitious, intelligent, and dedicated culinary virtuoso. With a voracious appetite for innovation, Sydney consistently pushes the boundaries of gastronomy, blending artistry and science to create culinary masterpieces. Their relentless pursuit of excellence, coupled with a keen intellect, results in a symphony of flavors that dazzle the palate. Their unwavering dedication to the culinary craft and a commitment to the highest standards of taste make Chef Sydney a true luminary in the world of fine dining.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="kitchen__item" id="kitchen-item-03">
+              <figure class="kitchen__staff-photo" data-aos-anchor="#kitchen-item-03" data-aos="fade-up">
+                <img src="./img/chef/chef-richard-01.jpg" alt="Chef Richard 'Richie' Jerimovich" width="1000" height="700" />
+              </figure>
+              <div class="kitchen__staff-details">
+                <strong class="kitchen__staff-name heading--primary" data-aos-anchor="#kitchen-item-03" data-aos="fade-left" data-aos-delay="250">Chef Richard "Richie" Jerimovich</strong>
+                <div class="kitchen__staff-bio" data-aos-anchor="#kitchen-item-03" data-aos="fade-left" data-aos-delay="500">
+                  <p>Introducing the enigmatic culinary maverick, Chef Richard. A relentless, sarcastic hard-ass in the kitchen, Richard spares no one from their razor-sharp wit and high standards. Beneath that tough exterior, however, lies a heart of gold. Richard dishes out discipline and culinary brilliance in equal measure, pushing their team to excel. A mentor who will scold you for a sloppy sauce but lend a caring ear when needed. Richard is a paradox, a gruff chef with a deep well of love and care for those who dare to tread the culinary path beside them.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
       <section class="block block--gallery gallery">
         <div class="grid-container">
 
-          <strong class="gallery__heading typography--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-left">la Galleria</strong>
+          <strong class="gallery__heading font-family--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-down">la galleria</strong>
 
           <div class="gallery__listing flex" id="lightgallery">
 
@@ -154,11 +202,6 @@
         </div>
       </section>
 
-      <section class="block block--contact-us">
-
-
-      </section>
-
     </main>
 
     <footer class="footer" id="footer">
@@ -166,25 +209,25 @@
 
         <div class="footer__contact">
           <div class="footer__contact-item">
-            <strong class="heading--primary heading--sm">Address</strong>
-            <div>
-              Via Michele Mazzella, 70
-              Ischia Napoli, Napoli, 80077
+            <strong class="footer__contact-heading heading--primary">Address</strong>
+            <div class="footer__contact-details">
+              <span>Via Michele Mazzella, 70</span>
+              <span>Ischia Napoli, Napoli, 80077</span>
             </div>
           </div>
           <div class="footer__contact-item">
-            <strong class="heading--primary heading--sm">Hours</strong>
-            <div>
-              Mon to Thurs: 12pm to 11pm
-              Fri and Sat: 12pm to Midnight
-              Sunday: Closed
+            <strong class="footer__contact-heading heading--primary">Hours</strong>
+            <div class="footer__contact-details">
+              <span>Mon to Thurs: 12pm to 11pm</span>
+              <span>Fri and Sat: 12pm to Midnight</span>
+              <span>Sunday: Closed</span>
             </div>
           </div>
           <div class="footer__contact-item">
-            <strong class="heading--primary heading--sm">Contact</strong>
-            <div>
-              <a href="tel:081 333 6111">081 333 6111</a>
-              <a href="mailto:ciao@ribalta.it">ciao@ribalta.it</a>
+            <strong class="footer__contact-heading heading--primary">Contact</strong>
+            <div class="footer__contact-details">
+              <span>Tel: <a href="tel:081 333 6111">081 333 6111</a></span>
+              <span>Email: <a href="mailto:ciao@ribalta.it">ciao@ribalta.it</a></span>
             </div>
           </div>
         </div>
@@ -193,11 +236,12 @@
           <p class="footer__copyright">&copy; <span id="copyright-year"></span> Daymarker Digital. All Rights Reserved.</p>
         </div>
 
+        <strong class="footer__brand font-family--script">Ribalta</strong>
+
       </div>
     </footer>
 
     <script>
-
 
       function setViewportHeightCSSVar() {
         document.documentElement.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
