@@ -5,6 +5,8 @@
 
     <title>Daymarker Digital - Company Home Page with Flexbox</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +35,22 @@
 
   <body class="font-family--sans-serif">
 
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+      <div class="flex-container">
+        <div class="header__brand font-family--script">Ribalta</div>
+        <nav class="header__navigation navigation font-family--sans-serif">
+          <div class="header__navigation-item">
+            <a class="header__navigation-link" href="#feature-image" target="_self" title="About">About</a>
+          </div>
+          <div class="header__navigation-item">
+            <a class="header__navigation-link" href="#kitchen" target="_self" title="Kitchen">Kitchen</a>
+          </div>
+          <div class="header__navigation-item">
+            <a class="header__navigation-link" href="#gallery-heading" target="_self" title="Gallery">Gallery</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
     <main class="main" id="main">
 
@@ -71,10 +88,10 @@
         </div>
       </section>
 
-      <section class="block block--kitchen kitchen">
+      <section class="block block--kitchen kitchen" id="kitchen">
         <div class="grid-container">
 
-          <strong class="kitchen__heading font-family--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-down">yes chef</strong>
+          <strong class="kitchen__heading font-family--script" id="kitchen-heading" data-aos-anchor="#kitchen-heading" data-aos="fade-down">yes chef</strong>
 
           <div class="kitchen__listing">
 
@@ -119,7 +136,7 @@
         </div>
       </section>
 
-      <section class="block block--gallery gallery">
+      <section class="block block--gallery gallery" >
         <div class="grid-container">
 
           <strong class="gallery__heading font-family--script" id="gallery-heading" data-aos-anchor="#gallery-heading" data-aos="fade-down">la galleria</strong>
