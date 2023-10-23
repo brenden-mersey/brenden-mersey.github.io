@@ -1,0 +1,193 @@
+:root {
+
+  --theme-colour--black: #111111;
+  --theme-colour--white: #ffffff;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  display: block;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+/** Body ---------------------------------------- **/
+
+body {
+  color: var(--theme-colour--black);
+  background-color: var(--theme-colour--white);
+  line-height: 1.35;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    font-size: 16px;
+  }
+
+}
+
+/** AOS ---------------------------------------- **/
+
+[data-aos="fade-up"] {
+  transform: translate3d( 0, 8px, 0 );
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d( -8px, 0, 0 );
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d( 0, -8px, 0 );
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d( 8px, 0, 0 );
+}
+
+/** Block ---------------------------------------- **/
+
+.block {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
+
+/** About Us ---------------------------------------- **/
+
+.about-us {
+  grid-column: 2 / 6;
+  margin-top: 38px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}
+
+/** Figure  ---------------------------------------- **/
+
+figure {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** Flex  ---------------------------------------- **/
+
+.flex-container {
+  padding: 0 26px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/** Footer  ---------------------------------------- **/
+
+.footer {}
+
+/** Full Viewport Height  ---------------------------------------- **/
+
+.full-viewport-height {
+  height: var(--theme-viewport-height--total);
+}
+
+/** Grid Container ---------------------------------------- **/
+
+.grid-container,
+.grid-container-fluid {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+.grid-container,
+.grid-container-fluid {
+  padding: 0 26px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .grid-container,
+  .grid-container-fluid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 768px - (2 * 26px) );
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .grid-container,
+  .grid-container-fluid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 1200px - (2 * 26px) );
+  }
+
+}
+
+/** Header ---------------------------------------- **/
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 14px 0;
+}
+
+/** Hero ---------------------------------------- **/
+
+.hero {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}

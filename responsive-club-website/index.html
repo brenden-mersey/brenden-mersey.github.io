@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  <head>
+
+    <title>Brenden Mersey - Responsive Club Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" rel="stylesheet">
+
+    <link href="./typography.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+
+    <script>
+      (function(html){
+        html.className = "js";
+        html.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
+      })(document.documentElement);
+    </script>
+
+  </head>
+
+  <body class="font-family--sans-serif">
+
+    <header class="header" id="header">
+      <div class="grid-container">
+
+      </div>
+    </header>
+
+    <main class="main" id="main">
+      <section class="block">
+        <div class="grid-container">
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="grid-container">
+
+        <div class="footer__legal">
+          <p class="footer__copyright">&copy; <span id="copyright-year"></span> Brenden Mersey. All Rights Reserved.</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <script>
+
+      function setViewportHeightCSSVar() {
+        document.documentElement.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
+      }
+
+      var copyrightYearEl = document.getElementById( "copyright-year" );
+      var copyrightYear = new Date();
+      if ( copyrightYearEl ) {
+        copyrightYear = copyrightYear.getFullYear();
+        copyrightYearEl.innerText = copyrightYear;
+      }
+
+      setViewportHeightCSSVar();
+
+      window.addEventListener( "resize", function(event) {
+        setViewportHeightCSSVar();
+      });
+
+      window.addEventListener( "load", function(event) {
+
+        AOS.init({
+          offset: 175,
+          delay: 250,
+          duration: 750,
+          easing: 'ease-in-out-cubic',
+          once: true,
+          mirror: false,
+          anchorPlacement: 'top-bottom',
+        });
+
+        setTimeout(function() {
+          AOS.refresh();
+        }, 500);
+
+      });
+
+    </script>
+
+  </body>
+
+</html>
