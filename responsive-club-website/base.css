@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+/** Body ---------------------------------------- **/
+
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+/** AOS ---------------------------------------- **/
+
+[data-aos="fade-up"] {
+  transform: translate3d( 0, 8px, 0 );
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d( -8px, 0, 0 );
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d( 0, -8px, 0 );
+}
+
+[data-aos="fade-left"] {
+  transform: translate3d( 8px, 0, 0 );
+}
+
+/** Figure  ---------------------------------------- **/
+
+figure {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** Main  ---------------------------------------- **/
+
+.main {
+  flex: 1 0 auto;
+}

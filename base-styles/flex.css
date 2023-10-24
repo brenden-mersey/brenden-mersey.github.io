@@ -1,0 +1,8 @@
+/** Flex Container ---------------------------------------- **/
+
+.flex-container {
+  display: flex;
+  padding: 0 26px;
+  justify-content: center;
+  align-items: center;
+}

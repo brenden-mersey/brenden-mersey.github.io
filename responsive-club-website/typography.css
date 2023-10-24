@@ -1,128 +1,67 @@
 /** Body Copy ---------------------------------------- **/
 
 .body-copy--primary {
-
-}
-
-.body-copy--lg {
-  font-size: calc( 8px + 1vw );
-}
-
-.body-copy--md {
-  font-size: calc( 6px + 1vw );
-}
-
-.body-copy--sm {
-  font-size: calc( 4px + 1vw );
-}
-
-@media screen and (min-width: 768px) {
-
-  .body-copy--lg {
-    font-size: calc( 10px + 1vw );
-  }
-
-  .body-copy--md {
-    font-size: calc( 8px + 1vw );
-  }
-
-  .body-copy--sm {
-    font-size: calc( 6px + 1vw );
-  }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-  .body-copy--lg {
-    font-size: calc( 12px + 1vw );
-  }
-
-  .body-copy--md {
-    font-size: calc( 10px + 1vw );
-  }
-
-  .body-copy--sm {
-    font-size: calc( 8px + 1vw );
-  }
-
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
 }
 
 /** Font Family ---------------------------------------- **/
 
 .font-family--sans-serif {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .font-family--serif {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Quattrocento', serif;
 }
 
 .font-family--script {
-  font-family: 'Pinyon Script', cursive;
+  font-family: cursive;
+}
+
+/** Font Weight ---------------------------------------- **/
+
+.font-weight--100 {
+  font-weight: 100;
+}
+
+.font-weight--200 {
+  font-weight: 200;
+}
+
+.font-weight--300 {
+  font-weight: 300;
+}
+
+.font-weight--400 {
+  font-weight: 400;
+}
+
+.font-weight--500 {
+  font-weight: 500;
+}
+
+.font-weight--600 {
+  font-weight: 600;
+}
+
+.font-weight--700 {
+  font-weight: 700;
+}
+
+.font-weight--800 {
+  font-weight: 800;
+}
+
+.font-weight--900 {
+  font-weight: 900;
 }
 
 /** Heading ---------------------------------------- **/
 
 .heading--primary {
+  font-family: 'Quattrocento', serif;
   line-height: 1;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-}
-
-.heading--xl {
-  font-size: calc( 16px + 1vw );
-}
-
-.heading--lg {
-  font-size: calc( 12px + 1vw );
-}
-
-.heading--md {
-  font-size: calc( 8px + 1vw );
-}
-
-.heading--sm {
-  font-size: calc( 4px + 1vw );
-}
-
-@media screen and (min-width: 768px) {
-
-  .heading--xl {
-    font-size: calc( 18px + 1vw );
-  }
-
-  .heading--lg {
-    font-size: calc( 14px + 1vw );
-  }
-
-  .heading--md {
-    font-size: calc( 10px + 1vw );
-  }
-
-  .heading--sm {
-    font-size: calc( 6px + 1vw );
-  }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-  .heading--xl {
-    font-size: calc( 20px + 1vw );
-  }
-
-  .heading--lg {
-    font-size: calc( 16px + 1vw );
-  }
-
-  .heading--md {
-    font-size: calc( 12px + 1vw );
-  }
-
-  .heading--sm {
-    font-size: calc( 8px + 1vw );
-  }
-
+  font-weight: 700;
 }

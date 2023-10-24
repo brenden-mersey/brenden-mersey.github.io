@@ -1,0 +1,48 @@
+/** Grid Container ---------------------------------------- **/
+
+.grid-container,
+.grid-container-fluid,
+.grid-container-full-width {
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-container,
+.grid-container-fluid {
+  padding: 0 26px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .grid-container,
+  .grid-container-fluid,
+  .grid-container-full-width {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 768px - (2 * 26px) );
+    padding: 0;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  .grid-container,
+  .grid-container-fluid,
+  .grid-container-full-width {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-container {
+    max-width: calc( 1200px - (2 * 26px) );
+  }
+
+}
