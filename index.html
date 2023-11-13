@@ -1,13 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html class="no-js">
 
   <head>
-    <title>CodeAcademy Baby</title>
+
+    <title>Brenden Mersey - Codeacademy Portfolio Site</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="./styles.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
+
+    <script asyn type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js?ver=5.3.2"></script>
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/all.min.js?ver=3.12.2"></script>
+
+    <script>
+      (function(html){
+        html.className = "js";
+        html.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
+      })(document.documentElement);
+    </script>
+
   </head>
- 
+
   <body>
-    <h1>CodeAcademy Baby</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+    <main class="main" id="main" role="main">
+      
+      <header class="header" id="header">
+        <div class="flex-container block__content">
+          <div class="header__brand">Brenden Mersey</div>
+          <nav class="header__navigation navigation">
+            <div class="navigation__item"><a href="#work">Work</a></div>
+            <div class="navigation__item"><a href="#about">About</a></div>
+            <div class="navigation__item"><a href="#contact">Contact</a></div>
+          </nav>
+        </div>
+      </header>
+      
+      <section class="block block--intro intro" id="intro">
+        <div class="intro__content block__content">
+          <h1 class="intro__heading">Brenden is an front-end engineer based in Vancouver, Canada.</h1>
+        </div>
+        <figure>
+          <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+        </figure>
+      </section>
+      
+      <section class="block block--work work" id="work">
+        <div class="work__content block__content">
+          <h2 class="intro__heading">Recent Work</h2>
+          <p>Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships through architecture.</p>
+        </div>
+        <div class="work__listing block__content">
+          <div class="work__example">
+            <figure class="work__image">
+              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+            </figure>
+            <h3 class="intro__heading">Project One</h3>
+          </div>
+          <div class="work__example">
+            <figure class="work__image">
+              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+            </figure>
+            <h3 class="intro__heading">Project Two</h3>
+          </div>
+          <div class="work__example">
+            <figure class="work__image">
+              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+            </figure>
+            <h3 class="intro__heading">Project Three</h3>
+          </div>
+          <div class="work__example">
+            <figure class="work__image">
+              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+            </figure>
+            <h3 class="intro__heading">Project Four</h3>
+          </div>
+        </div>
+      </section>
+      
+      <section class="block block--contact contact" id="contact">
+        <div class="contact__content block__content">
+          <h2 class="contact__heading">Let's Work Together</h2>
+          <p>We're always looking for new opportunities and are comfortable working internationally. Please get in touch and one of our project managers will contact you about beginning the proposal process.</p>
+          <a class="contact__button" href="mailto:brenden@daymarker.digital" target="_blank" title="Contact Us">Contact Us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="grid-container"></div>
+    </footer>
+    
+    <script defer type="text/javascript" src="./main.min.js"></script>
+
   </body>
- 
+
 </html>

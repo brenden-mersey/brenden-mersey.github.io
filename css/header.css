@@ -1,0 +1,12 @@
+.header__brand {
+  margin-right: auto;
+  width: auto;
+  font-weight: 500;
+}
+
+.header__navigation {
+  margin-left: auto;
+  width: auto;
+  column-gap: 20px;
+  font-weight: 300;
+}
