@@ -3,11 +3,12 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: calc(20px + 2vw);
+  font-size: calc(20px + 1.5vw);
+  font-weight: 600;
 }
 
 h2 {
-  font-size: calc(18px + 2vw);
+  font-size: calc(18px + 1.5vw);
 }
 
 h2 + p {
@@ -15,7 +16,7 @@ h2 + p {
 }
 
 h3 {
-  font-size: calc(16px + 2vw);
+  font-size: calc(14px + 1vw);
 }
 
 p, li {
@@ -23,10 +24,10 @@ p, li {
   line-height: 1.6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
   h1 {
-    font-size: calc(20px + 3.5vw);
+    font-size: calc(20px + 2vw);
   }
   
   h2 {
@@ -34,7 +35,7 @@ p, li {
   }
   
   h3 {
-    font-size: calc(16px + 3.5vw);
+    font-size: calc(14px + 1.1vw);
   }
   
 }
@@ -42,7 +43,7 @@ p, li {
 @media screen and (min-width: 1200px) {
 
   h1 {
-    font-size: calc(20px + 4.5vw);
+    font-size: calc(20px + 2.5vw);
   }
   
   h2 {
@@ -50,7 +51,7 @@ p, li {
   }
   
   h3 {
-    font-size: calc(16px + 4.5vw);
+    font-size: calc(14px + 1.2vw);
   }
-
+  
 }

@@ -47,7 +47,7 @@
       
       <section class="block block--intro intro" id="intro">
         <div class="intro__content block__content">
-          <h1 class="intro__heading">Brenden is an front-end engineer based in Vancouver, Canada.</h1>
+          <h1 class="intro__heading">Brenden is an senior front-end engineer based in sunny Vancouver, Canada.</h1>
         </div>
         <figure>
           <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
@@ -56,33 +56,43 @@
       
       <section class="block block--work work" id="work">
         <div class="work__content block__content">
-          <h2 class="intro__heading">Recent Work</h2>
-          <p>Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships through architecture.</p>
+          <h2 class="work__heading">Codeacademy Projects</h2>
+          <div class="work__message">
+            <p>Explore my collection of projects, the fruits of my online full stack engineering course. From web applications to responsive interfaces, these creations reflect my journey of continued learning and passion for web development. Enjoy the showcase!</p>
+          </div>
         </div>
         <div class="work__listing block__content">
-          <div class="work__example">
+          <div class="work__item">
             <figure class="work__image">
-              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              <a class="work__link" href="./projects/company-home-page-with-flexbox" target="_self">
+                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              </a>
             </figure>
-            <h3 class="intro__heading">Project One</h3>
+            <h3 class="work__title">Company Home Page with Flexbox</h3>
           </div>
-          <div class="work__example">
+          <div class="work__item">
             <figure class="work__image">
-              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              <a class="work__link" href="./projects/responsive-club-website" target="_self">
+                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              </a>
             </figure>
-            <h3 class="intro__heading">Project Two</h3>
+            <h3 class="work__title">Responsive Club Website</h3>
           </div>
-          <div class="work__example">
+          <div class="work__item">
             <figure class="work__image">
-              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              <a class="work__link" href="./projects/website-design-system" target="_self">
+                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              </a>
             </figure>
-            <h3 class="intro__heading">Project Three</h3>
+            <h3 class="work__title">Digital Design Systems</h3>
           </div>
-          <div class="work__example">
+          <div class="work__item">
             <figure class="work__image">
-              <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              <a class="work__link" href="./projects/typography-cheat-sheet" target="_self">
+                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+              </a>
             </figure>
-            <h3 class="intro__heading">Project Four</h3>
+            <h3 class="work__title">Typography Cheat Sheet</h3>
           </div>
         </div>
       </section>
@@ -90,14 +100,28 @@
       <section class="block block--contact contact" id="contact">
         <div class="contact__content block__content">
           <h2 class="contact__heading">Let's Work Together</h2>
-          <p>We're always looking for new opportunities and are comfortable working internationally. Please get in touch and one of our project managers will contact you about beginning the proposal process.</p>
-          <a class="contact__button" href="mailto:brenden@daymarker.digital" target="_blank" title="Contact Us">Contact Us</a>
+          <div class="contact__message">
+            <p>We continually seek new prospects and are well-equipped to collaborate on an international scale. Feel free to reach out, and we'll initiate the proposal process with you.</p>
+          </div>
+          <a class="contact__button" href="mailto:brenden.mersey@gmail.com" target="_blank" title="Contact Us">Contact Us</a>
         </div>
       </section>
     </main>
 
     <footer class="footer" id="footer">
-      <div class="grid-container"></div>
+      <div class="footer__content block__content">
+        <div class="footer__grid">
+          <div class="footer__grid-item brand">
+            <strong class="footer__brand">Brenden Mersey</strong>
+          </div>
+          <div class="footer__grid-item address">
+            <p>310-2211 2nd Ave W<br>Vancouver, Canada</p>
+          </div>
+          <div class="footer__grid-item contact-info">
+            <p>(778) 822-6377<br>brenden.mersey@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </footer>
     
     <script defer type="text/javascript" src="./main.min.js"></script>

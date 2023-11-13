@@ -17,30 +17,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/block.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/block.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/body.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/body.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/css\/block.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -50,7 +26,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/block.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/body.css" : {
@@ -62,7 +38,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/body.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/contact.css" : {
@@ -74,7 +50,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/contact.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/flex.css" : {
@@ -86,6 +62,18 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/flex.min.css",
+      "oF" : 1,
+      "pg" : 0
+    },
+    "\/css\/footer.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/footer.min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -98,7 +86,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/grid.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/header.css" : {
@@ -110,7 +98,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/header.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/intro.css" : {
@@ -122,7 +110,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/intro.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/main.css" : {
@@ -134,7 +122,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/main.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/navigation.css" : {
@@ -146,7 +134,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/navigation.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/reset.css" : {
@@ -158,7 +146,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/reset.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/styles.css" : {
@@ -170,7 +158,7 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/styles.min.css",
-      "oF" : 2,
+      "oF" : 3,
       "pg" : 0
     },
     "\/css\/typography.css" : {
@@ -182,7 +170,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/typography.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/variables.css" : {
@@ -194,7 +182,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/variables.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/css\/work.css" : {
@@ -206,31 +194,7 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/work.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/flex.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/flex.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/header.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/header.min.min.css",
-      "oF" : 0,
+      "oF" : 1,
       "pg" : 0
     },
     "\/img\/intro.jpg" : {
@@ -267,18 +231,6 @@
       "oAP" : "\/index.html",
       "oF" : 0
     },
-    "\/intro.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/intro.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/js\/main.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -290,18 +242,6 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/main.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/main.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/main.min.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -312,34 +252,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
-    },
-    "\/projects\/cheat-sheet\/.nova\/Configuration.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/cheat-sheet\/.nova\/Configuration-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/cheat-sheet\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/cheat-sheet\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/cheat-sheet\/styles.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/styles.min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/projects\/company-home-page-with-flexbox\/.editorconfig" : {
       "cB" : 0,
@@ -1870,6 +1782,34 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/projects\/typography-cheat-sheet\/.nova\/Configuration.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/typography-cheat-sheet\/.nova\/Configuration-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/typography-cheat-sheet\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/typography-cheat-sheet\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/typography-cheat-sheet\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles.min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/projects\/website-design-system\/.nova\/Configuration.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -1926,18 +1866,6 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/styles.min.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/typography.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/typography.min.min.css",
       "oF" : 0,
       "pg" : 0
     }

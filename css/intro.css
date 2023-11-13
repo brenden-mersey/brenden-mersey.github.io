@@ -1,15 +1,21 @@
+.intro__heading {
+  max-width: 475px;
+}
+
 @media screen and (min-width: 768px) {
+  
+  .intro__heading {
+    max-width: 75%;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
 
   .intro__heading {
-    max-width: 65%;
+    max-width: 70%;
   }
 
 }
 
-@media screen and (min-width: 1200px) {
-
-  .intro__heading {
-    max-width: 65%;
-  }
-
-}
+@media screen and (min-width: 1200px) {}
