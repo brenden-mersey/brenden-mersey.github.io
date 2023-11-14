@@ -1,0 +1,45 @@
+[data-gsap^="fade"] {
+  transition-property: opacity, transform;
+  transition-duration: 750ms;
+  opacity: 0;
+}
+
+[data-gsap-delay="250"] {
+  transition-delay: 250ms;
+}
+
+[data-gsap-delay="500"] {
+  transition-delay: 500ms;
+}
+
+[data-gsap-delay="750"] {
+  transition-delay: 750ms;
+}
+
+[data-gsap-delay="1000"] {
+  transition-delay: 1000ms;
+}
+
+[data-gsap="fade-left"] {
+  transform: translate3d( var(--theme-gsap-travel), 0, 0 );
+}
+
+[data-gsap="fade-right"] {
+  transform: translate3d( calc(-1 * var(--theme-gsap-travel)), 0, 0 );
+}
+
+[data-gsap="fade-up"] {
+  transform: translate3d( 0, var(--theme-gsap-travel), 0 );
+}
+
+[data-gsap="fade-down"] {
+  transform: translate3d( 0, calc(-1 * var(--theme-gsap-travel)), 0 );
+}
+
+.gsap-started [data-gsap="fade-up"],
+.gsap-started [data-gsap="fade-right"],
+.gsap-started [data-gsap="fade-down"],
+.gsap-started [data-gsap="fade-left"] {
+  opacity: 1;
+  transform: translate3d( 0, 0, 0 );
+}

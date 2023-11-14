@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "typography.css";
 @import "block.css";
+@import "gsap.css";
 
 @import "body.css";
 @import "contact.css";
@@ -12,4 +13,5 @@
 @import "intro.css";
 @import "main.css";
 @import "navigation.css";
+@import "section.css";
 @import "work.css";

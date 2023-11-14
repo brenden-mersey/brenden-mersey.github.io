@@ -4,13 +4,13 @@
 }
 
 .contact__button {
-  background: var(--theme-colour--white);
-  color: var(--theme-colour--black);
+  border: 2px solid var(--theme-colour--white);
+  color: var(--theme-colour--white);
   transition-property: background, color;
   transition-duration: 500ms;
   text-decoration: none;
+  background: transparent;
   outline: none;
-  border: none;
   display: inline-flex;
   width: auto;
   justify-content: center;
@@ -18,16 +18,19 @@
   min-width: 150px;
   padding: 18px;
   font-weight: 500;
-  margin-top: 40px;
   &:hover {
-    background: var(--theme-colour--off-black);
-    color: var(--theme-colour--white);
+    background: var(--theme-colour--white);
+    color: var(--theme-colour--off-black);
   }
 }
 
 .contact__content {
   padding-top: 12vw;
   padding-bottom: 12vw;
+}
+
+.contact__cta {
+  margin-top: 40px;  
 }
 
 .contact__heading {
@@ -46,13 +49,16 @@
 @media screen and (min-width: 992px) {
   
   .contact__button { 
-    margin-top: 55px;
     min-width: 175px;
   }
   
   .contact__content {
     padding-top: 10vw;
     padding-bottom: 10vw;
+  }
+  
+  .contact__cta {
+    margin-top: 55px;  
   }
   
   .contact__heading {
@@ -65,13 +71,16 @@
 @media screen and (min-width: 1200px) {
   
   .contact__button { 
-    margin-top: 70px;
     min-width: 200px;
   }
   
   .contact__content {
     padding-top: 8vw;
     padding-bottom: 8vw;
+  }
+  
+  .contact__cta {
+    margin-top: 70px;  
   }
   
   .contact__heading {

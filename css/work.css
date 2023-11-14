@@ -7,16 +7,101 @@
   margin-bottom: 20px;
 }
 
+.work__image img {
+  transition-property: transform;
+  transition-duration: 2s;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .work__link {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 3/2;
+}
+
+.work__link:hover img {
+  transform: scale(1.1);
+}
+
+.work__link:hover .work__overlay {
+  opacity: 0.666;
+}
+
+.work__link:hover .work__overlay-desc {
+  opacity: 1;
+  transform: translate3d( 0, 0, 0 );
+}
+
+.work__link:hover .work__overlay-tech {
+  opacity: 1;
+  transform: translate3d( 0, 0, 0 );
 }
 
 .work__listing {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 50px;
+}
+
+.work__overlay {
+  background: var(--theme-colour--black);
+  transition-property: opacity;
+  transition-duration: 750ms;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.work__overlay-desc {
+  color: var(--theme-colour--white);
+  transition-property: opacity, transform;
+  transition-duration: 750ms;
+  position: absolute;
+  opacity: 0;
+  transform: translate3d( 0, 20px, 0 );
+  z-index: 10;
+  padding: 10%;
+  text-align: center;
+}
+
+.work__overlay-tech {
+  transition-property: opacity, transform;
+  transition-duration: 750ms;
+  transition-delay: 250ms;
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate3d( 0, 20px, 0 );
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: 36px;
+  padding: 36px 0;
+}
+
+.work__overlay-tech img {
+  display: block;
+  width: auto;
+  height: 30px;
 }
 
 .work__title {
@@ -64,6 +149,15 @@
   .work__listing {
     row-gap: 80px;
     column-gap: 80px;
+  }
+  
+  .work__overlay-tech {
+    column-gap: 40px;
+    padding: 40px 0;
+  }
+  
+  .work__overlay-tech img {
+    height: 34px;
   }
   
 }

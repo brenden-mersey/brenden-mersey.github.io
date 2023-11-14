@@ -18,15 +18,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" type="image/x-icon" href="apple-touch.png">
 
-    <script asyn type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js?ver=5.3.2"></script>
     <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/all.min.js?ver=3.12.2"></script>
-
-    <script>
-      (function(html){
-        html.className = "js";
-        html.style.setProperty( "--theme-viewport-height--total", window.innerHeight + "px" );
-      })(document.documentElement);
-    </script>
 
   </head>
 
@@ -35,75 +27,113 @@
     <main class="main" id="main" role="main">
       
       <header class="header" id="header">
-        <div class="flex-container block__content">
+        <div class="header__content block__content">
           <div class="header__brand">Brenden Mersey</div>
           <nav class="header__navigation navigation">
-            <div class="navigation__item"><a href="#work">Work</a></div>
-            <div class="navigation__item"><a href="#about">About</a></div>
-            <div class="navigation__item"><a href="#contact">Contact</a></div>
+            <div class="header__navigation-item">
+              <a class="header__navigation-link" href="#projects" target="_self" title="Projects">Projects</a>
+            </div>
+            <div class="header__navigation-item">
+              <a class="header__navigation-link" href="#about" target="_self" title="About">About</a>
+            </div>
+            <div class="header__navigation-item">
+              <a class="header__navigation-link" href="#contact" target="_self" title="Contact">Contact</a>
+            </div>
           </nav>
         </div>
       </header>
       
-      <section class="block block--intro intro" id="intro">
+      <section class="block block--intro intro" id="about" data-gsap-block-trigger>
         <div class="intro__content block__content">
-          <h1 class="intro__heading">Brenden is an senior front-end engineer based in sunny Vancouver, Canada.</h1>
+          <h1 class="intro__heading" data-gsap="fade-left" data-gsap-delay="0">Brenden is a senior front-end engineer based in stunning Vancouver, Canada.</h1>
         </div>
-        <figure>
+        <figure class="intro__image" data-gsap="fade-left" data-gsap-delay="250">
           <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
         </figure>
       </section>
       
-      <section class="block block--work work" id="work">
-        <div class="work__content block__content">
-          <h2 class="work__heading">Codeacademy Projects</h2>
-          <div class="work__message">
+      <section class="block block--work work" id="projects">
+        <div class="work__content block__content" data-gsap-block-trigger>
+          <h2 class="work__heading" data-gsap="fade-left" data-gsap-delay="0">Codeacademy Projects</h2>
+          <div class="work__message" data-gsap="fade-left" data-gsap-delay="250">
             <p>Explore my collection of projects, the fruits of my online full stack engineering course. From web applications to responsive interfaces, these creations reflect my journey of continued learning and passion for web development. Enjoy the showcase!</p>
           </div>
         </div>
         <div class="work__listing block__content">
-          <div class="work__item">
-            <figure class="work__image">
-              <a class="work__link" href="./projects/company-home-page-with-flexbox" target="_self">
-                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+          <div class="work__item" data-gsap-block-trigger>
+            <figure class="work__image" data-gsap="fade-left" data-gsap-delay="0">
+              <a class="work__link" href="./projects/company-home-page-with-flexbox/" target="_self">
+                <img loading="lazy" src="./img/project-image-01.png" alt="Vancouver, BC" />
+                <div class="work__overlay"></div>
+                <div class="work__overlay-desc">This project features a company homepage for an imagined Pizzeria using flexbox. Some of the requirements included integrating a company logo, a mission statement, a gallery and a team section.</div>
+                <div class="work__overlay-tech">
+                  <img loading="lazy" src="./img/svg/technology-logo-html5--white.svg" alt="HTML5 Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-css3--white.svg" alt="CSS3 Logo" />                  <img loading="lazy" src="./img/svg/technology-logo-javascript--white.svg" alt="JavaScript Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-github--white.svg" alt="Github Logo" />
+                </div>
               </a>
             </figure>
-            <h3 class="work__title">Company Home Page with Flexbox</h3>
+            <h3 class="work__title" data-gsap="fade-left" data-gsap-delay="500">Company Home Page with Flexbox</h3>
           </div>
-          <div class="work__item">
-            <figure class="work__image">
-              <a class="work__link" href="./projects/responsive-club-website" target="_self">
-                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+          <div class="work__item" data-gsap-block-trigger>
+            <figure class="work__image" data-gsap="fade-left" data-gsap-delay="0">
+              <a class="work__link" href="./projects/responsive-club-website/" target="_self">
+                <img loading="lazy" src="./img/project-image-02.jpg" alt="Vancouver, BC" />
+                <div class="work__overlay"></div>
+                <div class="work__overlay-desc">The goal of this project was to explore the usage of responsive media queries to see how the site's content would dynamically respond as you adjust the size of your screen!​</div>
+                <div class="work__overlay-tech">
+                  <img loading="lazy" src="./img/svg/technology-logo-html5--white.svg" alt="HTML5 Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-css3--white.svg" alt="CSS3 Logo" />                  <img loading="lazy" src="./img/svg/technology-logo-javascript--white.svg" alt="JavaScript Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-github--white.svg" alt="Github Logo" />
+                </div>
               </a>
             </figure>
-            <h3 class="work__title">Responsive Club Website</h3>
+            <h3 class="work__title" data-gsap="fade-left" data-gsap-delay="500">Responsive Club Website</h3>
           </div>
-          <div class="work__item">
-            <figure class="work__image">
-              <a class="work__link" href="./projects/website-design-system" target="_self">
-                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+          <div class="work__item" data-gsap-block-trigger>
+            <figure class="work__image" data-gsap="fade-left" data-gsap-delay="0">
+              <a class="work__link" href="./projects/typography-cheat-sheet/" target="_self">
+                <img loading="lazy" src="./img/project-image-04.png" alt="Vancouver, BC" />
+                <div class="work__overlay"></div>
+                <div class="work__overlay-desc">In this project, the goal was to build a reference cheat sheet to facilitate the development of more websites in the future!</div>
+                <div class="work__overlay-tech">
+                  <img loading="lazy" src="./img/svg/technology-logo-html5--white.svg" alt="HTML5 Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-css3--white.svg" alt="CSS3 Logo" />                  <img loading="lazy" src="./img/svg/technology-logo-javascript--white.svg" alt="JavaScript Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-github--white.svg" alt="Github Logo" />
+                </div>
               </a>
             </figure>
-            <h3 class="work__title">Digital Design Systems</h3>
+            <h3 class="work__title" data-gsap="fade-left" data-gsap-delay="500">Typography Cheat Sheet</h3>
           </div>
-          <div class="work__item">
-            <figure class="work__image">
-              <a class="work__link" href="./projects/typography-cheat-sheet" target="_self">
-                <img loading="lazy" src="./img/intro.jpg" alt="Vancouver, BC" />
+          <div class="work__item" data-gsap-block-trigger>
+            <figure class="work__image" data-gsap="fade-left" data-gsap-delay="0">
+              <a class="work__link" href="./projects/website-design-system/" target="_self">
+                <img loading="lazy" src="./img/project-image-03.png" alt="Vancouver, BC" />
+                <div class="work__overlay"></div>
+                <div class="work__overlay-desc">
+                  The goal of this project was to create a basic design system for a website. Some of the critical components of this project included things like colour scales, typographic rules and and UI/UX guides.
+                </div>
+                <div class="work__overlay-tech">
+                  <img loading="lazy" src="./img/svg/technology-logo-html5--white.svg" alt="HTML5 Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-css3--white.svg" alt="CSS3 Logo" />                  <img loading="lazy" src="./img/svg/technology-logo-javascript--white.svg" alt="JavaScript Logo" />
+                  <img loading="lazy" src="./img/svg/technology-logo-github--white.svg" alt="Github Logo" />
+                </div>
               </a>
             </figure>
-            <h3 class="work__title">Typography Cheat Sheet</h3>
+            <h3 class="work__title" data-gsap="fade-left" data-gsap-delay="500">Digital Design Systems</h3>
           </div>
         </div>
       </section>
       
-      <section class="block block--contact contact" id="contact">
+      <section class="block block--contact contact" id="contact" data-gsap-block-trigger>
         <div class="contact__content block__content">
-          <h2 class="contact__heading">Let's Work Together</h2>
-          <div class="contact__message">
+          <h2 class="contact__heading" data-gsap="fade-left" data-gsap-delay="0">Let's Work Together</h2>
+          <div class="contact__message" data-gsap="fade-left" data-gsap-delay="250">
             <p>We continually seek new prospects and are well-equipped to collaborate on an international scale. Feel free to reach out, and we'll initiate the proposal process with you.</p>
           </div>
-          <a class="contact__button" href="mailto:brenden.mersey@gmail.com" target="_blank" title="Contact Us">Contact Us</a>
+          <div class="contact__cta" data-gsap="fade-up" data-gsap-delay="750">
+            <a class="contact__button" href="mailto:brenden.mersey@gmail.com" target="_blank" title="Contact Us" >Contact Us</a>
+          </div>
         </div>
       </section>
     </main>
