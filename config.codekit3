@@ -2133,6 +2133,28 @@
       "oAP" : "\/styles.min.min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/test.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/test.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/test.min.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/test.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
     }
   },
   "hooks" : [
