@@ -1,0 +1,20 @@
+@use './functions/container-max-width' as *;
+
+$theme-grid-settings: (
+  'container-breakpoints': (
+    'base': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1400px
+  ),
+  'container-max-widths': container-max-width(),
+  'container-padding': 22px,
+  'gutter': (
+    'base': 12px,
+    'lg': 20px,
+  )
+);
+
+@error $theme-grid-settings;
