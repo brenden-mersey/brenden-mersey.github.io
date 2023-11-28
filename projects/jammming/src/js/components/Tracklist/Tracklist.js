@@ -8,9 +8,9 @@ function Tracklist({ playlistTracks = [] }) {
       <div className="tracklist__container grid-container">
         {console.log('tracklist ::')}
         <div className="tracklist__list">
-          {playlistTracks.map((track, index) => {
-            const { name, artist, album, id } = track;
-            return <Track key={id} name={name} artist={artist} album={album} />
+          {playlistTracks.map((track) => {
+            const { id } = track;
+            return <Track key={id} track={track} />
           })}
         </div>
       </div>
