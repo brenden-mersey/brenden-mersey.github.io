@@ -11,6 +11,7 @@
   column-gap: var(--theme-grid-gutter);
   
   &__image {
+    background: rgba(0,0,0,0.05);
     aspect-ratio: 1/1;
     width: 90px;
     height: auto;

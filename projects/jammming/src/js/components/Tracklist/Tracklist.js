@@ -6,7 +6,6 @@ function Tracklist({ playlistTracks = [] }) {
   return (
     <div className="tracklist">
       <div className="tracklist__container grid-container">
-        {console.log('tracklist ::')}
         <div className="tracklist__list">
           {playlistTracks.map((track) => {
             const { id } = track;
