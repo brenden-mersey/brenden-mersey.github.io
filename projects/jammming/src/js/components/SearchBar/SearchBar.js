@@ -1,24 +1,42 @@
 import React, { useState } from 'react';
-import styles from './SearchBar.scss'; // Import css modules stylesheet as styles
+import Spotify from '../../utils/Spotify';
+import './SearchBar.scss';
 
-function SearchBar() {
+function SearchBar({ setSearchResults }) {
   
   const [ inputValue, setInputValue ] = useState("");
   
   const handleChange = (e) => {
     setInputValue(e.target.value);
   };
+    
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if ( inputValue ) {
+      Spotify.search(inputValue).then(setSearchResults);
+    } else {
+      alert('Please enter a valid search term!');
+    }
+  }
   
   return (
-    <form className="form">
-      <div className="form__container grid-container">
-        <div className="form__field">
-          <label className="form__label"  htmlFor="search">Search</label>
-          <input className="form__input" id="search" name="search" type="text" value={inputValue} onChange={handleChange} />
-        </div>
-        <div className="form__test">You're looking for: <strong>{inputValue}</strong></div>
+    <div className="search-bar">
+      <div className="search-bar__container grid-container">
+        <form className="search-bar__form" onSubmit={handleSubmit}>
+          <div className="search-bar__form-field">
+            <input 
+              className="search-bar__form-input input input--primary" 
+              id="search"
+              name="search"
+              type="text" 
+              placeholder="What are you looking for?"
+              value={inputValue} 
+              onChange={handleChange} />
+          </div>
+          <button className="search-bar__form-button button button--primary" type="submit">Search</button>
+        </form>
       </div>
-    </form>
+    </div>
   );
 }
 

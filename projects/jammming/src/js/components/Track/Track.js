@@ -4,24 +4,20 @@ import './Track.scss'; //
 
 function Track({ track }) {
   
-  const trackImage = {
-    alt: track.name || "",
-    src: track.image?.src || "",
-    width: 100,
-    height: 100
-  };
-  
+  const { album, artist, images, name, release_date, release_date_precision } = track;
+  const trackImage = { alt: name, sizes: images || [] };
+    
   return (
     <div className="track">
       <div className="track__image">
-        { trackImage.src ? <TrackImage trackImage={trackImage} /> : "" }
+        { trackImage.sizes.length ? <TrackImage trackImage={trackImage} /> : "" }
       </div>
       <div className="track__info">
-        <strong className="track__name">{track.name}</strong>
+        <strong className="track__name">{name}</strong>
         <div className="track__meta">
-          <span className="track__artist">{track.artist}</span>
+          <span className="track__artist">{artist}</span>
           <span>•</span>
-          <span className="track__album">{track.album}</span>
+          <span className="track__album">{album}</span>
         </div>
       </div>
     </div>

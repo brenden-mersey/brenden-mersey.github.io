@@ -1,9 +1,10 @@
 .footer {
-  background: var(--theme-colour--dark-blue);
-  color: var(--theme-colour--white);
+  background: var(--theme-colour--spotify-green);
+  color: var(--theme-colour--spotify-black);
   flex-shrink: 0;
   width: 100%;
   padding: 12px 0;
   font-size: 12px;
   letter-spacing: 0.03em;
+  font-weight: 300;
 }

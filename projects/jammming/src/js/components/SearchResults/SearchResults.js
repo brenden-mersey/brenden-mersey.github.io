@@ -1,10 +1,18 @@
 import React from 'react';
-import styles from './SearchResults.module.css'; // Import css modules stylesheet as styles
+import Track from '../Track/Track';
+import './SearchResults.scss'; // Import css modules stylesheet as styles
 
-function SearchResults() {
+function SearchResults({ searchResults = [] }) {
   return (
-    <div>
-      <h2>Results</h2>
+    <div className="search-results">
+      <div className="search-results__container grid-container">
+        <div className="search-results__list">
+          {searchResults.map((track) => {
+            const { id } = track;
+            return <Track key={id} track={track} />
+          })}
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,40 @@
-.form {
-  &__field,
-  &__test {
-    grid-column: 1 / -1;
+@import "../../../scss/mixins/breakpoint";
+
+.search-bar {
+  
+  padding-bottom: 38px;
+  
+  .button {
+    margin: 0 auto;
   }
+  
+  .input {
+    width: 90%;
+    text-align: center;
+  }
+  
+  &__form {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat( 1, 1fr );
+    row-gap: var(--theme-grid-gutter);
+    &-button {
+      margin: 0 auto;
+    }
+    &-field {
+      display: flex;
+      width: 100%;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+  }
+  
+  @include breakpoint(md) {
+    
+    &__form {
+      row-gap: var(--theme-grid-gutter--lg);
+    }
+    
+  }
+  
 }

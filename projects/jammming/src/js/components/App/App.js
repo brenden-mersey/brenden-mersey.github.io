@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import Footer from '../Footer/Footer';
-import Main from '../Main/Main';
+import Header from '../Header/Header';
+import SearchBar from '../SearchBar/SearchBar';
+import SearchResults from '../SearchResults/SearchResults';
+import Tracklist from '../Tracklist/Tracklist';
 
-import TRACKS from '../../data/tracks';
+import TRACKS from '../../test-data/tracks';
 
 function App() {
   
   const [ searchResults, setSearchResults ] = useState([]);
   const [ playlistName, setPlaylistName ] = useState("New Playlist");
-  const [ playlistTracks, setPlaylistTracks ] = useState(TRACKS);
+  const [ playlistTracks, setPlaylistTracks ] = useState([]);
   
   return (
     <>
-      <Main 
-        playlistName={playlistName}
-        playlistTracks={playlistTracks} />
+      <main className="main" id="main" role="main">
+        <Header />
+        <SearchBar setSearchResults={setSearchResults} />
+        <SearchResults searchResults={searchResults} />
+        <Tracklist playlistTracks={playlistTracks} />
+      </main>
       <Footer />
     </>
   );
