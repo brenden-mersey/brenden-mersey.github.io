@@ -1,0 +1,74 @@
+@use '../mixins/breakpoint' as *;
+
+.grid {
+
+  &-container,
+  &-container-fluid,
+  &-full-width {
+    column-gap: var(--theme-grid-gutter);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &-container,
+  &-container-fluid {
+    padding: 0 var(--theme-grid-container-padding);
+  }
+
+  @include breakpoint(sm) {
+
+    &-container {
+      max-width: var(--theme-grid-container--sm);
+      padding: 0;
+    }
+
+  }
+
+  @include breakpoint(md) {
+
+    &-container,
+    &-container-fluid,
+    &-full-width {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    &-container {
+      max-width: var(--theme-grid-container--md);
+    }
+
+  }
+
+  @include breakpoint(lg) {
+
+    &-container,
+    &-container-fluid,
+    &-full-width {
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: var(--theme-grid-gutter--lg);
+    }
+
+    &-container {
+      max-width: var(--theme-grid-container--lg);
+    }
+
+  }
+
+  @include breakpoint(xl) {
+
+    &-container {
+      max-width: var(--theme-grid-container--xl);
+    }
+
+  }
+
+  @include breakpoint(xxl) {
+
+    &-container {
+      max-width: var(--theme-grid-container--xxl);
+    }
+
+  }
+
+}

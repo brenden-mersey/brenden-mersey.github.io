@@ -1,0 +1,16 @@
+@use "sass:map";
+
+@function container-max-width( $breakpoints: (), $padding: 0px ) {
+  
+  $widths: ();
+  
+  @each $breakpoint, $value in $breakpoints {
+    @if $breakpoint != "base" {
+      $max-width: $value - ($padding * 2);
+      $widths: map.set($widths, $breakpoint, $max-width);
+    }
+  }
+    
+  @return $widths;
+  
+}

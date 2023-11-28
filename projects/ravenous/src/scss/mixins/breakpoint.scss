@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "../variables" as *;
+
+@mixin breakpoint( $size: null ) {
+
+  @if map.get( $theme-grid-container-breakpoints, $size ) {
+	  @media ( min-width: map.get( $theme-grid-container-breakpoints, $size ) ) { @content; }
+  } @else {
+    @media ( min-width: $size ) { @content; }
+  }
+
+}
