@@ -1,18 +1,16 @@
 @use "sass:map";
-@use "../variables" as *;
 
-@function container-max-width() {
+@function container-max-width( $breakpoints: (), $padding: 0px ) {
   
-  $breakpoints: map.get( $theme-grid-settings, "container-breakpoints" );
-  $padding: map.get( $theme-grid-settings, "container-padding" );
   $widths: ();
   
-  @each $bp, $value in $breakpoints {
-    @if $bp != "base" {
-      map.set($widths, $bp, $value);
+  @each $breakpoint, $value in $breakpoints {
+    @if $breakpoint != "base" {
+      $max-width: $value - ($padding * 2);
+      $widths: map.set($widths, $breakpoint, $max-width);
     }
   }
-  
+    
   @return $widths;
   
 }

@@ -31,7 +31,7 @@
     &-container,
     &-container-fluid,
     &-full-width {
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(8, 1fr);
     }
 
     &-container {
@@ -45,6 +45,7 @@
     &-container,
     &-container-fluid,
     &-full-width {
+      grid-template-columns: repeat(12, 1fr);
       column-gap: var(--theme-grid-gutter--lg);
     }
 

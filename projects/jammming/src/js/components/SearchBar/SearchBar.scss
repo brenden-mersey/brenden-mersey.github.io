@@ -1,0 +1,6 @@
+.form {
+  &__field,
+  &__test {
+    grid-column: 1 / -1;
+  }
+}

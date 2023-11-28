@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "../variables" as *;
+@use "../mixins/map-to-css-vars" as *;
+
+:root {
+  --theme-grid-container-padding: #{$theme-grid-container-padding};
+  @include map-to-css-vars( "--theme-colour", $theme-colours );
+  @include map-to-css-vars( "--theme-font-family", $theme-font-families );
+  @include map-to-css-vars( "--theme-grid-container", $theme-grid-container-breakpoints );
+  @include map-to-css-vars( "--theme-grid-container-max-width", $theme-grid-container-max-widths );
+  @include map-to-css-vars( "--theme-grid-gutter", $theme-grid-container-gutter );
+}
