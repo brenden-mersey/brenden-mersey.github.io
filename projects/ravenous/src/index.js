@@ -7,12 +7,17 @@ import './scss/index.scss';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
+const inDev = false;
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+if ( inDev ) {
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+} else {
+  root.render(<App />);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

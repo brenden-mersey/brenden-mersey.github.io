@@ -6,20 +6,4 @@
   @extend %ui-input;
   @extend %ui-transition;
   
-  background: var(--theme-colour--white);
-  
-  &--primary {
-    border: 2px solid transparent;
-    background: #2a2a2a;
-    border-radius: 9999px;
-    &:hover,
-    &:focus {
-      background: #242424;
-    }
-    &:focus {
-      border-color: var(--theme-colour--spotify-white);
-    }
-  }
-  
-  
 }

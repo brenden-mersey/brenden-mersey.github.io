@@ -5,18 +5,4 @@
   @extend %ui-base;
   @extend %ui-transition;
   
-  min-width: 120px;
-  cursor: pointer;
-  font-weight: 600;
-  
-
-  &--primary {
-    background: var(--theme-colour--spotify-green);
-    color: var(--theme-colour--spotify-black);
-    border-radius: 9999px;
-    &:hover {
-      transform: scale(1.075);
-    }
-  }
-  
 }

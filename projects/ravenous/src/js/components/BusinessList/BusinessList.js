@@ -1,11 +1,15 @@
 import React from 'react';
 import Business from '../Business/Business';
+import './BusinessList.scss';
 
-function BusinessList(props) {
-  const { list = [] } = props;
+function BusinessList({ list }) {  
   return (
-    <div>
-      {list.map((business) => <Business business={business} /> )}
+    <div className="business-list">
+      <div className="business-list__container grid-container">
+        <div className="business-list__list">
+          {list.map((business, index) => <Business key={index + "-" + business.name} business={business} /> )}
+        </div>
+      </div>
     </div>
   );
 }

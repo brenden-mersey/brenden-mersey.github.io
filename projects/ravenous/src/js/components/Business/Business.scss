@@ -1,0 +1,103 @@
+@import "../../../scss/mixins/breakpoint";
+
+.business {
+  
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 18px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  &__details,
+  &__image {
+    width: 100%;
+  }
+  
+  &__address {
+    flex: 1;
+    &-city,
+    &-street {
+      display: block;
+    }
+  }
+  
+  &__image {
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+  } 
+  
+  &__info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+  
+  &__meta {
+    display: flex;
+    width: 35%;
+    flex-flow: column;
+    align-items: flex-end;
+    &-category,
+    &-rating
+    &-reviews {
+      display: block;
+    }
+    &-category,
+    &-rating {
+      color: #C5A577;
+      font-weight: 700;
+    }
+    &-category {
+      text-transform: uppercase;
+    }
+  }
+  
+  &__name {
+    font-weight: 700;
+    font-size: 133.33%;
+  }
+  
+  @include breakpoint(sm) {
+    
+    &__details {
+      font-size: 12px;
+    }
+    
+  }
+  
+  @include breakpoint(md) {
+    
+    &__details {
+      font-size: 13px;
+    }
+    
+  }
+  
+  @include breakpoint(lg) {}
+  
+  @include breakpoint(xl) {
+    
+    &__details {
+      font-size: 13px;
+    }
+    
+  }
+  
+  @include breakpoint(xxl) {
+    
+    &__details {
+      font-size: 16px;
+    }
+    
+  }
+  
+  
+}

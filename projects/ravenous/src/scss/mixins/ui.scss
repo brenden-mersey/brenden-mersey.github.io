@@ -6,14 +6,12 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  background: transparent;
   line-height: 1;
   text-decoration: none;
   outline: none;
   color: inherit;
   border: none;
   margin: 0;
-  padding: var(--theme-grid-gutter);
   svg {
     fill: currentColor;
   }
@@ -35,7 +33,7 @@
 
 %ui-input {
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
   &[type="search"] {
     -webkit-appearance: none;
   }

@@ -1,0 +1,37 @@
+@import "../../../scss/mixins/breakpoint";
+
+.header {
+  
+  &__title {
+    color: #B2A799;
+    grid-column: 1 / -1;
+    transform: rotate(-5deg);
+    font-style: italic;
+    font-size: 12.5vw;
+    text-align: center;
+    margin: 0;
+    padding: 10vw 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  
+  @include breakpoint(lg) {
+    
+    &__title {
+      font-size: 10vw;
+      padding: 8vw 0;
+    }
+    
+  }
+  
+  @include breakpoint(xxl) {
+    
+    &__title {
+      font-size: 7.5vw;
+      padding: 6.5vw 0;
+    }
+    
+  }
+  
+}
