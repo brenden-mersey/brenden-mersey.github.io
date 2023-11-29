@@ -1,0 +1,9 @@
+@use "../mixins/ui" as *;
+
+.input {
+  
+  @extend %ui-base;
+  @extend %ui-input;
+  @extend %ui-transition;
+  
+}

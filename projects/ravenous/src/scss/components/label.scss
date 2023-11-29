@@ -1,0 +1,7 @@
+@use "../mixins/ui" as *;
+
+.label {
+  @extend %ui-transition;
+  font-weight: 600;
+  display: block;
+}
