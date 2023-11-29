@@ -2,12 +2,12 @@ import React from 'react';
 import Business from '../Business/Business';
 import './BusinessList.scss';
 
-function BusinessList({ list }) {  
+function BusinessList({ searchResults }) {  
   return (
     <div className="business-list">
       <div className="business-list__container grid-container">
         <div className="business-list__list">
-          {list.map((business, index) => <Business key={index + "-" + business.name} business={business} /> )}
+          {searchResults.map((business, index) => <Business key={business.id} business={business} /> )}
         </div>
       </div>
     </div>
