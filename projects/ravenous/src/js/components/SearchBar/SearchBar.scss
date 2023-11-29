@@ -4,7 +4,11 @@
   
   position: relative;
   padding: 10vw 0;
-  margin-bottom: 7.5vw;
+  
+  button {
+    min-width: 180px;
+    margin: 0 auto;
+  }
   
   img {
     width: 100%;
@@ -22,7 +26,11 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 24px;
+    row-gap: calc(var(--theme-grid-gutter) * 2);
+    &-action {
+      width: 100%;
+      text-align: center;
+    }
     &-row {
       column-gap: var(--theme-grid-gutter);
       display: grid;
@@ -44,6 +52,17 @@
       width: 100%;
       min-width: unset;
     }
+  }
+  
+  @include breakpoint(lg) {
+    
+    &__form {
+      row-gap: calc(var(--theme-grid-gutter--lg) * 2);
+      &-row {
+        column-gap: var(--theme-grid-gutter--lg);
+      }
+    }
+    
   }
   
 }
