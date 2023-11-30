@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Yelp from '../../utils/Yelp';
 import './SearchBar.scss';
 
-function getRandomHeroImagePath() {
-  const randomNumber = Math.floor(Math.random() * (3 - 1 + 1) + 1);
-  return `/img/search-hero-0${randomNumber}.jpg`;
-}
-
-function SearchBar({ setSearchResults }) {
+function SearchBar({ heroImage, setSearchResults }) {
   
   const [ search, setSearch ] = useState("");
   const [ location, setLocation ] = useState("");
   const [ sortBy, setSortBy ] = useState("best_match");
-    
-  useEffect(() => {}, []);
+  
+  const isInitialMount = useRef(true);
+  
+  useEffect(() => {
+    if (isInitialMount.current) {
+       isInitialMount.current = false;
+    } else {
+      Yelp.search( location, search, sortBy ).then(setSearchResults);
+    }
+  }, [ sortBy ]);
   
   const handleInputChange = (e) => {
     const { value, name } = e.target;
@@ -35,15 +38,13 @@ function SearchBar({ setSearchResults }) {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    if ( search && location ) {
-      Yelp.search( location, search, sortBy ).then(setSearchResults);
-    }
+    Yelp.search( location, search, sortBy ).then(setSearchResults);
   };
 
   return (
     <div className="search-bar">
       <div className="search-bar__image">
-        <img src={getRandomHeroImagePath()} alt="Search Bar Hero" />
+        <img src={heroImage} alt="Search Bar Hero" />
       </div>
       <div className="search-bar__container grid-container">
         <form className="search-bar__form form" onSubmit={handleSubmit}>

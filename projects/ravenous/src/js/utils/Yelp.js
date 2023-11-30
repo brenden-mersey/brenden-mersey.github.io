@@ -15,7 +15,7 @@ const Yelp = {
         Authorization: `Bearer ${key}`
       }
     };
-        
+    
     return fetch( endpoint, options )
       .then((response) => {
         console.log(response);
