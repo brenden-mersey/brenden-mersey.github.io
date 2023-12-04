@@ -2,15 +2,12 @@ import React from 'react';
 import Track from '../Track/Track';
 import './Tracklist.scss'; //
 
-function Tracklist({ playlistTracks = [] }) {  
+function Tracklist({ tracks = [] }) {  
   return (
     <div className="tracklist">
       <div className="tracklist__container grid-container">
         <div className="tracklist__list">
-          {playlistTracks.map((track) => {
-            const { id } = track;
-            return <Track key={id} track={track} />
-          })}
+          {tracks.map((track) => <Track key={track.id} track={track} /> )}
         </div>
       </div>
     </div>

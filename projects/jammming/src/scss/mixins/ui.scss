@@ -1,6 +1,6 @@
 %ui-base {
-  padding: var(--theme-grid-gutter);
-  min-height: 48px;
+  padding: 0 var(--theme-grid-gutter);
+  min-height: 52px;
   display: flex;
   width: auto;
   justify-content: center;
@@ -13,7 +13,6 @@
   color: inherit;
   border: none;
   margin: 0;
-  padding: var(--theme-grid-gutter);
   svg {
     fill: currentColor;
   }

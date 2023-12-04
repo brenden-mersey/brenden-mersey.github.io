@@ -8,10 +8,26 @@
   align-items: center;
   justify-content: space-between;
   
+
+  &__album,
+  &__artist {
+    font-size: 90%;
+  }
+  
+  &__controls {
+    width: 40px;
+    height: 40px;
+    img, svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
   &__image {
     background: rgba(0,0,0,0.05);
     aspect-ratio: 1/1;
-    width: 90px;
+    width: 68px;
     height: auto;
     border-radius: 5px;
     overflow: hidden;
@@ -32,37 +48,14 @@
     justify-content: flex-start;
   }
   
-  &__meta {
-    width: 100%;
-    font-size: 90%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
   &__name {
     width: 100%;
   }
   
   @include breakpoint(md) {
     
-    &__image {
-      width: 110px;
-    }
-    
     &__info {
       font-size: 18px;
-      flex-flow: row nowrap;
-    }
-    
-    &__meta {
-      flex: 1;
-      column-gap: var(--theme-grid-gutter);
-      justify-content: flex-end;
-    }
-    
-    &__name {
-      width: auto;
     }
     
   }
@@ -71,18 +64,10 @@
     
     column-gap: var(--theme-grid-gutter--lg);
     
-    &__image {
-      width: 120px;
-    }
-    
     &__info {
-      font-size: 20px;
+      font-size: 14px;
     }
-    
-    &__meta {
-      column-gap: var(--theme-grid-gutter--lg);
-    }
-    
+
   }
   
 }

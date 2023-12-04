@@ -1,0 +1,30 @@
+@use "../mixins/breakpoint" as *;
+
+.module {
+  
+  padding: var(--theme-grid-gutter);
+  background: #1E1E1E;
+  border-radius: 10px;
+  
+  &__heading {
+    text-align: center;
+    padding: var(--theme-grid-gutter);
+  }
+  
+  & + .module {
+    margin-top: calc( var(--theme-grid-gutter) * 2 );
+  }
+
+  @include breakpoint(lg) {
+    
+    &__heading {
+      padding: var(--theme-grid-gutter--lg);
+    }
+    
+    & + .module {
+      margin-top: 0;
+    }
+    
+  }
+  
+}

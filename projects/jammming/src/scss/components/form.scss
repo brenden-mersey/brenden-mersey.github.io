@@ -1,0 +1,22 @@
+@use '../mixins/breakpoint' as *;
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: var(--theme-grid-gutter);
+  margin-bottom: 38px;
+  &__field {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  &__input {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  @include breakpoint(lg) {
+    row-gap: var(--theme-grid-gutter--lg);
+  }
+}

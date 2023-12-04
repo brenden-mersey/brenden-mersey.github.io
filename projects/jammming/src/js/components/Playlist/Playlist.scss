@@ -1,19 +1,20 @@
 @import "../../../scss/mixins/breakpoint";
 
-.search-results {
+.playlist {
   
-  &__list {
+  grid-column: 1 / -1;
+  
+  &__tracks {
     row-gap: var(--theme-grid-gutter);
-    grid-column: 1 / -1;
-    background: #1E1E1E;
-    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
   
   @include breakpoint(lg) {
     
-    &__list {
+    grid-column: 8 / -1;
+    
+    &__tracks {
       row-gap: var(--theme-grid-gutter--lg);
     }
     

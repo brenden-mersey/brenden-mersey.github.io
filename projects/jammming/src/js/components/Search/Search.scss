@@ -1,0 +1,13 @@
+@import "../../../scss/mixins/breakpoint";
+
+.search { 
+  
+  grid-column: 1 / -1;
+
+  @include breakpoint(lg) {
+    
+    grid-column: 1 / span 7;
+    
+  }
+
+}

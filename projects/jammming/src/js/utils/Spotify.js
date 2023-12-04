@@ -4,8 +4,6 @@ let accessToken;
 
 const Spotify = {
   
-  clientID: "abc",
-  
   getAccessToken() {
     
     if ( accessToken ) {
@@ -19,8 +17,7 @@ const Spotify = {
       
       accessToken = accessTokenMatch[1];
       const expiresIn = Number(expiresInMatch[1]);
-      console.log(expiresIn);
-      window.setTimeout(() => accessToken = '', expiresIn * 10000);
+      window.setTimeout(() => accessToken = '', expiresIn * 3600);
       window.history.pushState('Access Token', null, '/'); // This clears the parameters, allowing us to grab a new access token when it expires.
       return accessToken;
       
@@ -43,6 +40,7 @@ const Spotify = {
       return response.json();
     }).then((jsonResponse) => {
       return ( jsonResponse.tracks.items || [] ).map((track) => {
+        console.log( track );
         return {
           id: track.id,
           name: track.name,
@@ -57,7 +55,41 @@ const Spotify = {
     });
   },
   
-  savePlaylist(name, trackUris) {}
+  savePlaylist( playlistName = "", playlistTrackUris = [] ) {
+    
+    /*
+    Expects a playlistName (STRING) and playlistTrackUris (ARRAY)
+    */
+    
+    if ( !playlistName || !playlistTrackUris.length ) {
+      return;
+    }
+    
+    const accessToken = Spotify.getAccessToken();
+    const headers = { Authorization: `Bearer ${accessToken}` };
+    let userID;
+    
+    return fetch( 'https://api.spotify.com/v1/me', { headers: headers })
+      .then((response) => response.json())
+      .then((jsonResponse) => {
+        userID = jsonResponse.id;
+        return fetch(`https://api.spotify.com/v1/users/${userID}/playlists`, {
+          headers: headers,
+          method: 'POST',
+          body: JSON.stringify({name: playlistName})
+        })
+        .then((response) => response.json())
+        .then((jsonResponse) => {
+          const playlistId = jsonResponse.id;
+          return fetch(`https://api.spotify.com/v1/users/${userID}/playlists/${playlistId}/tracks`, {
+            headers: headers,
+            method: 'POST',
+            body: JSON.stringify({uris: playlistTrackUris})
+          });
+        })
+      });
+      
+  }
   
 };
 

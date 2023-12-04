@@ -20,7 +20,7 @@
   @include breakpoint(sm) {
 
     &-container {
-      max-width: var(--theme-grid-container--sm);
+      max-width: var(--theme-grid-container-max-width--sm);
       padding: 0;
     }
 
@@ -35,7 +35,7 @@
     }
 
     &-container {
-      max-width: var(--theme-grid-container--md);
+      max-width: var(--theme-grid-container-max-width--md);
     }
 
   }
@@ -50,7 +50,7 @@
     }
 
     &-container {
-      max-width: var(--theme-grid-container--lg);
+      max-width: var(--theme-grid-container-max-width--lg);
     }
 
   }
@@ -58,7 +58,7 @@
   @include breakpoint(xl) {
 
     &-container {
-      max-width: var(--theme-grid-container--xl);
+      max-width: var(--theme-grid-container-max-width--xl);
     }
 
   }
@@ -66,7 +66,7 @@
   @include breakpoint(xxl) {
 
     &-container {
-      max-width: var(--theme-grid-container--xxl);
+      max-width: var(--theme-grid-container-max-width--xxl);
     }
 
   }

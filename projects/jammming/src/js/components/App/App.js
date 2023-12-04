@@ -1,25 +1,37 @@
 import React, { useState } from 'react';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
+import Playlist from '../Playlist/Playlist';
+import Search from '../Search/Search';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
-import Tracklist from '../Tracklist/Tracklist';
 
-import TRACKS from '../../test-data/tracks';
+// https://mockaroo.com/
+import MOCK_TRACKS from "../../mock-data/tracks.json";
 
 function App() {
   
-  const [ searchResults, setSearchResults ] = useState([]);
+  const [ searchedTracks, setSearchedTracks ] = useState([]);
   const [ playlistName, setPlaylistName ] = useState("New Playlist");
   const [ playlistTracks, setPlaylistTracks ] = useState([]);
-  
+    
   return (
     <>
+      <Header />
       <main className="main" id="main" role="main">
-        <Header />
-        <SearchBar setSearchResults={setSearchResults} />
-        <SearchResults searchResults={searchResults} />
-        <Tracklist playlistTracks={playlistTracks} />
+        <div className="main__container grid-container">
+          <Search>
+            <SearchBar 
+              setSearchedTracks={setSearchedTracks} />
+            <SearchResults 
+              searchedTracks={searchedTracks} 
+              playlistTracks={playlistTracks} 
+              setPlaylistTracks={setPlaylistTracks} />
+          </Search>
+          <Playlist 
+            playlistTracks={playlistTracks} 
+            setPlaylistTracks={setPlaylistTracks} />
+        </div>
       </main>
       <Footer />
     </>
