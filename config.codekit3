@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34564",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/.nova\/Configuration.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -228,6 +236,94 @@
       "oAP" : "\/work.min.css",
       "oF" : 1,
       "pg" : 0
+    },
+    "\/docs\/The_JavaScript_For_React_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_JavaScript_For_React_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Apollo_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Apollo_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Axios_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Axios_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Conditionals_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Conditionals_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Data_Fetching_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Data_Fetching_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_for_Absolute_Beginners_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_for_Absolute_Beginners_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Hooks_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Hooks_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Props_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Props_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Router_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Router_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/What_Can_You_Do_With_React.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/What_Can_You_Do_With_React.pdf",
+      "oF" : 0
     },
     "\/img\/intro.jpg" : {
       "ft" : 16384,
@@ -1419,14 +1515,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/projects\/jammming\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/.gitignore",
-      "oF" : 0
-    },
     "\/projects\/jammming\/.nova\/Configuration.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -2469,14 +2557,6 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/projects\/ravenous\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/ravenous\/.gitignore",
-      "oF" : 0
-    },
     "\/projects\/ravenous\/.nova\/Configuration.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -3075,7 +3155,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Yelp.min.js",
       "oF" : 0,
       "sC" : 3,
@@ -3414,6 +3494,401 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/node_modules",
+      "oF" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/favicon.ico",
+      "oF" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/index.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/index.min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/logo192.png" : {
+      "ft" : 32768,
+      "iS" : 4153,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/logo192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/logo512.png" : {
+      "ft" : 32768,
+      "iS" : 12066,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/logo512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/manifest.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/manifest-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/public\/robots.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/public\/robots.txt",
+      "oF" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/App.test.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/App.test.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/app\/App.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/App.min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/app\/App.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/App.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/app\/data.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/data.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/app\/store.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/store.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/About.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/About.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Article.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Article.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Articles.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Articles.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Author.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Author.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Categories.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Categories.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Category.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Category.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/EditProfileForm.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/EditProfileForm.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Footer.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Footer.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Header.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Header.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Profile.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Profile.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Root.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Root.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/Search.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Search.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/components\/SignUp.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/SignUp.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/features\/articles\/articlesSlice.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/articlesSlice.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/features\/authors\/authorsSlice.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/authorsSlice.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/features\/categories\/categoriesSlice.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/categoriesSlice.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/features\/session\/sessionSlice.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/sessionSlice.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/index.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/index.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/serviceWorker.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/serviceWorker.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/src\/setupTests.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/setupTests.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/yarn.lock" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/yarn.lock",
+      "oF" : 0
     },
     "\/projects\/responsive-club-website\/.editorconfig" : {
       "cB" : 0,
