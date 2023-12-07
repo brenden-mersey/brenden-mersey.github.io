@@ -5,9 +5,10 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 
 export default function Article () {
-  const articles = useSelector(selectArticles)
-  const { title } = useParams()
-  const article = articles[title]
+  
+  const articles = useSelector(selectArticles);
+  const { title } = useParams();
+  const article = articles[title];
 
   return article ? (
     <div className='article-container'>

@@ -22,7 +22,7 @@ export default function Header () {
       {
         currentUser.username
           ? <>
-              <NavLink to="/profile">Categories</NavLink>
+              <NavLink to="/profile">Profile</NavLink>
               <button onClick={handleLogout} className="logout"> Log Out </button>
             </>
           : <NavLink to="/sign-up">Sign Up</NavLink>

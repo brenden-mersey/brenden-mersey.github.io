@@ -3,6 +3,7 @@ import { editUser } from "../features/session/sessionSlice";
 import { useDispatch } from "react-redux";
 
 export default function EditProfileForm() {
+  
   const [username, setUsername] = useState("");
   const dispatch = useDispatch();
 
@@ -29,4 +30,5 @@ export default function EditProfileForm() {
       </form>
     </section>
   );
+  
 }

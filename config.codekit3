@@ -1735,6 +1735,26 @@
       "oAP" : "\/projects\/jammming\/public\/robots.txt",
       "oF" : 0
     },
+    "\/projects\/jammming\/public\/svg\/icon.garbage.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/jammming\/public\/svg\/icon.garbage.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/jammming\/public\/svg\/icon.plus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/jammming\/public\/svg\/icon.plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/projects\/jammming\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -1783,6 +1803,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/App.test.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/ButtonAddTrack\/ButtonAddTrack.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/ButtonAddTrack.min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
@@ -1839,6 +1870,39 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/jammming\/src\/js\/components\/IconAdd\/IconAdd.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/IconAdd.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/IconRemove\/IconRemove.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/IconRemove.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Input\/Input.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Input.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -1849,6 +1913,47 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/jammming\/src\/js\/components\/Search\/Search.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/Search.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Search\/Search.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/jammming\/src\/js\/components\/Search\/Search.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/projects\/jammming\/src\/js\/components\/SearchBar\/SearchBar.js" : {
       "bF" : 4,
@@ -1965,16 +2070,13 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/projects\/jammming\/src\/js\/test-data\/tracks.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/tracks.min.js",
+    "\/projects\/jammming\/src\/js\/mock-data\/tracks.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/jammming\/src\/js\/mock-data\/tracks-min.json",
       "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
+      "oO" : 1,
+      "oS" : 1
     },
     "\/projects\/jammming\/src\/js\/utils\/Spotify.js" : {
       "bF" : 4,
@@ -2087,6 +2189,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/projects\/jammming\/src\/scss\/components\/input.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/jammming\/src\/scss\/components\/module.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/jammming\/src\/scss\/components\/module.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -3124,6 +3241,17 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/ravenous\/src\/js\/components\/Link\/Link.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Link.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/projects\/ravenous\/src\/js\/components\/SearchBar\/SearchBar.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -3494,6 +3622,14 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/projects\/react-router-lesson-starter-code\/.nova\/Configuration.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/react-router-lesson-starter-code\/.nova\/Configuration-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/projects\/react-router-lesson-starter-code\/node_modules" : {
       "ft" : 65536,
