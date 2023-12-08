@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Spotify from '../../utils/Spotify';
 import Track from '../Track/Track';
 import './Playlist.scss';
@@ -6,6 +6,10 @@ import './Playlist.scss';
 function Playlist({ playlistTracks, setPlaylistTracks }) {  
   
   const [ title, setTitle ] = useState("");
+  
+  useEffect(() => {
+    localStorage.setItem( 'playlist', title );
+  }, [ title ] );  
   
   const handleChange = (e) => {
     const value = e.target.value;

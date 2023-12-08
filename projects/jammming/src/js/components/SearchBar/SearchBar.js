@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Spotify from '../../utils/Spotify';
 import './SearchBar.scss';
 
 function SearchBar({ setSearchedTracks }) {
   
-  const [ searchValue, setSearchValue ] = useState("");
+  const [ searchValue, setSearchValue ] = useState( localStorage.getItem('search') || '' );
+  
+  useEffect(() => {
+    localStorage.setItem( 'search', searchValue );
+  }, [ searchValue ] );  
   
   const handleChange = (e) => {
     setSearchValue(e.target.value);
