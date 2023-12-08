@@ -229,6 +229,94 @@
       "oF" : 1,
       "pg" : 0
     },
+    "\/docs\/The_JavaScript_For_React_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_JavaScript_For_React_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Apollo_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Apollo_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Axios_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Axios_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Conditionals_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Conditionals_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Data_Fetching_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Data_Fetching_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_for_Absolute_Beginners_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_for_Absolute_Beginners_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Hooks_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Hooks_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Props_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Props_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/The_React_Router_Cheatsheet.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/The_React_Router_Cheatsheet.pdf",
+      "oF" : 0
+    },
+    "\/docs\/What_Can_You_Do_With_React.pdf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/docs\/What_Can_You_Do_With_React.pdf",
+      "oF" : 0
+    },
     "\/img\/intro.jpg" : {
       "ft" : 16384,
       "iS" : 393529,
@@ -1435,138 +1523,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/projects\/jammming\/build\/asset-manifest.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/jammming\/build\/asset-manifest-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/jammming\/build\/favicon.ico" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/favicon.ico",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/index.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/index.html",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/logo192.png" : {
-      "ft" : 32768,
-      "iS" : 5347,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/logo192.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/jammming\/build\/logo512.png" : {
-      "ft" : 32768,
-      "iS" : 9664,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/logo512.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/projects\/jammming\/build\/manifest.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/projects\/jammming\/build\/manifest-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/projects\/jammming\/build\/robots.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/robots.txt",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/static\/css\/main.867dc33b.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/main.867dc33b.min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/projects\/jammming\/build\/static\/css\/main.867dc33b.css.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/static\/css\/main.867dc33b.css.map",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/static\/js\/787.07ba7306.chunk.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/787.07ba7306.chunk.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
-    },
-    "\/projects\/jammming\/build\/static\/js\/787.07ba7306.chunk.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/static\/js\/787.07ba7306.chunk.js.map",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/static\/js\/main.903c97a1.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/main.903c97a1.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
-    },
-    "\/projects\/jammming\/build\/static\/js\/main.903c97a1.js.LICENSE.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/static\/js\/main.903c97a1.js.LICENSE.txt",
-      "oF" : 0
-    },
-    "\/projects\/jammming\/build\/static\/js\/main.903c97a1.js.map" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/projects\/jammming\/build\/static\/js\/main.903c97a1.js.map",
-      "oF" : 0
-    },
     "\/projects\/jammming\/node_modules" : {
       "ft" : 65536,
       "oA" : 2,
@@ -1647,6 +1603,26 @@
       "oAP" : "\/projects\/jammming\/public\/robots.txt",
       "oF" : 0
     },
+    "\/projects\/jammming\/public\/svg\/icon.garbage.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/jammming\/public\/svg\/icon.garbage.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/projects\/jammming\/public\/svg\/icon.plus.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/jammming\/public\/svg\/icon.plus.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/projects\/jammming\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -1695,6 +1671,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/App.test.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/ButtonAddTrack\/ButtonAddTrack.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/ButtonAddTrack.min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
@@ -1751,16 +1738,90 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.js" : {
+    "\/projects\/jammming\/src\/js\/components\/IconAdd\/IconAdd.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/IconAdd.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/IconRemove\/IconRemove.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/IconRemove.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Input\/Input.js" : {
       "bF" : 4,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
+      "oAP" : "\/Input.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
       "oAP" : "\/Playlist.min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/jammming\/src\/js\/components\/Playlist\/Playlist.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/jammming\/src\/js\/components\/Search\/Search.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Search.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/jammming\/src\/js\/components\/Search\/Search.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/jammming\/src\/js\/components\/Search\/Search.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
     },
     "\/projects\/jammming\/src\/js\/components\/SearchBar\/SearchBar.js" : {
       "bF" : 4,
@@ -1877,16 +1938,13 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/projects\/jammming\/src\/js\/test-data\/tracks.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
+    "\/projects\/jammming\/src\/js\/mock-data\/tracks.json" : {
+      "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/tracks.min.js",
+      "oAP" : "\/projects\/jammming\/src\/js\/mock-data\/tracks-min.json",
       "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
+      "oO" : 1,
+      "oS" : 1
     },
     "\/projects\/jammming\/src\/js\/utils\/Spotify.js" : {
       "bF" : 4,
@@ -1999,6 +2057,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/projects\/jammming\/src\/scss\/components\/input.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/projects\/jammming\/src\/scss\/components\/module.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/projects\/jammming\/src\/scss\/components\/module.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -2216,12 +2289,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/my-first-react-app\/.gitignore",
-      "oF" : 0
-    },
-    "\/projects\/my-first-react-app\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/projects\/my-first-react-app\/node_modules",
       "oF" : 0
     },
     "\/projects\/my-first-react-app\/package-lock.json" : {
@@ -2484,6 +2551,148 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/projects\/ravenous\/build\/asset-manifest.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/ravenous\/build\/asset-manifest-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/ravenous\/build\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/favicon.ico",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/index.html",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/logo192.png" : {
+      "ft" : 32768,
+      "iS" : 5347,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/logo192.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/ravenous\/build\/logo512.png" : {
+      "ft" : 32768,
+      "iS" : 9664,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/logo512.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/projects\/ravenous\/build\/manifest.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/ravenous\/build\/manifest-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/projects\/ravenous\/build\/robots.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/robots.txt",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/css\/main.f855e6bc.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/main.f855e6bc.min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/css\/main.f855e6bc.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/static\/css\/main.f855e6bc.css.map",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/js\/787.a2761047.chunk.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/787.a2761047.chunk.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/ravenous\/build\/static\/js\/787.a2761047.chunk.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/static\/js\/787.a2761047.chunk.js.map",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/js\/main.b65d2e99.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/main.b65d2e99.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/projects\/ravenous\/build\/static\/js\/main.b65d2e99.js.LICENSE.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/static\/js\/main.b65d2e99.js.LICENSE.txt",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/js\/main.b65d2e99.js.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/projects\/ravenous\/build\/static\/js\/main.b65d2e99.js.map",
+      "oF" : 0
+    },
+    "\/projects\/ravenous\/build\/static\/media\/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/projects\/ravenous\/build\/static\/media\/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/projects\/ravenous\/node_modules" : {
       "ft" : 65536,
@@ -3044,6 +3253,17 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/projects\/ravenous\/src\/js\/components\/Link\/Link.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/Link.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
     "\/projects\/ravenous\/src\/js\/components\/SearchBar\/SearchBar.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -3075,7 +3295,7 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/Yelp.min.js",
       "oF" : 0,
       "sC" : 3,
@@ -3620,7 +3840,7 @@
     },
     "\/projects\/responsive-club-website\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 118047,
+      "iS" : 133273,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/projects\/responsive-club-website\/hero.jpg",
