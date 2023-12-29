@@ -1,143 +1,208 @@
-import inquirer from 'inquirer';
+import inquirer from "inquirer";
 
-const hat = '^';
-const hole = 'O';
-const fieldCharacter = '░';
-const pathCharacter = '*';
+function fieldGenerator(width=5, height=5) {
+
+  const field = [];
+  const markers = [ "░", "O", "^" ];
+
+  for ( let i = 0; i < height; i++ ) {
+
+    const fieldRow = [];
+    let holeCount = 0;
+
+    for ( let j = 0; j < width; j++ ) {
+
+      if ( i === 0 && j === 0 ) {
+        fieldRow.push("*");
+      } else {
+
+        let randomIndex = Math.floor(Math.random()*markers.length);
+        let randomMarker = markers[randomIndex];
+
+        if ( randomMarker === "^" ) {
+          markers.splice(randomIndex, 1);
+        }
+
+        if ( randomMarker === "O" ) {
+          if ( holeCount > 0 ) {
+            randomMarker = "░";
+          } else {
+             holeCount++;
+          }
+        }
+
+        fieldRow.push(randomMarker);
+
+      }
+
+    }
+
+    field.push(fieldRow);
+
+  }
+
+  return field;
+
+}
+
+function logger(message = "") {
+  console.log(`////////////////////////////////////////////////////////////`);
+  console.log(`${message}`);
+  console.log(`////////////////////////////////////////////////////////////`);
+}
 
 class Field {
 
   constructor(field = []) {
 
     this.field = field;
-    this.old = {
-      position: [ 0, 0 ],
-      marker: '*'
+    this.marker = {
+      user: "*",
+      field: "░",
+      hole: "O",
+      hat: "^"
     };
-    this.current = {
-      position: [ 0, 0 ],
-      marker: '*'
-    };
+    this.position = { x: 0, y: 0 };
+    this.prevPosition = { x: 0, y: 0 };
 
+    // start game
     this.run();
 
   }
 
-  status() {
-    console.log(`////////////////////////////////////////////////////////////`);
-    console.log({
-      old: this.old,
-      current: this.current,
-    });
+  printPrevPosition() {
+    console.log('PrevPosition', this.prevPosition);
   }
 
-  moveResult() {
-
-    let oldMarker = this.old.marker;
-    let newMarker = this.field[ this.current.position[0] ][ this.current.position[1] ];
-
-    console.log({ oldMarker, newMarker });
-    this.status();
-
+  printPosition() {
+    console.log('Position', this.position);
   }
 
-  print() {
+  printField() {
     console.log(this.field);
   }
 
-  move( direction = "" ) {
+  updateField() {
 
-    let currentPosition = this.current.position;
-    let maxUp = 0;
+    let fieldPosition = this.field[ this.position.y ][ this.position.x ];
+
+    switch (fieldPosition) {
+      case "O": {
+        logger("Oops! You fell in the hole. Game Over :(");
+        break;
+      }
+      case "^": {
+        logger("Congratulations! You found your hat! You Win :)");
+        break;
+      }
+      default: {
+
+        // assign 'user' marker to new position in field
+        this.field[this.position.y][this.position.x] = this.marker.user;
+        this.field[this.prevPosition.y][this.prevPosition.x] = this.marker.field;
+
+        // print field with new markers to user
+        this.printField();
+
+        // update previous position to reflect current position in prep for next move
+        this.prevPosition.y = this.position.y;
+        this.prevPosition.x = this.position.x;
+
+        // re-prompt user
+        this.promptUser();
+
+        break;
+
+      }
+    }
+
+  }
+
+  moveUser(direction = "") {
+
+    let position = this.position;
     let maxDown = this.field.length - 1;
-    let maxLeft = 0;
-    let maxRight = this.field[currentPosition[0]].length - 1;
+    let maxRight = this.field[position.y].length - 1;
 
     switch(direction) {
-      case 'Up': {
-        if ( currentPosition[0] === maxUp ) {
-          console.log("*** Cannot move Up! ***");
+      case "Up": {
+        if ( position.y === 0 ) {
+          logger("Oops! Cannot move up!");
         } else {
-          this.decreaseCurrentPositionRowIndex();
+          this.moveUp();
         }
         break;
       }
-      case 'Down': {
-        if ( currentPosition[0] === maxDown ) {
-          console.log("*** Cannot move Down! ***");
+      case "Down": {
+        if ( position.y === maxDown ) {
+          logger("Oops! Cannot move down!");
         } else {
-          this.increaseCurrentPositionRowIndex();
+          this.moveDown();
         }
         break;
       }
-      case 'Left': {
-        if ( currentPosition[1] === maxLeft ) {
-          console.log("*** Cannot move Left! ***");
+      case "Left": {
+        if ( position.x === 0 ) {
+          logger("Oops! Cannot move left!");
         } else {
-          this.decreaseCurrentPositionColIndex();
+          this.moveLeft();
         }
         break;
       }
-      case 'Right': {
-        if ( currentPosition[1] === maxRight ) {
-          console.log("*** Cannot move Right! ***");
+      case "Right": {
+        if ( position.x === maxRight ) {
+          logger("Oops! Cannot move right!");
         } else {
-          this.increaseCurrentPositionColIndex();
+          this.moveRight();
         }
         break;
       }
     }
 
-    this.moveResult();
-    this.prompt();
+    this.updateField();
 
   }
 
-  prompt() {
-
+  promptUser() {
     inquirer
       .prompt([
         {
-          type: 'list',
-          name: 'options',
-          message: 'Move throught the field!',
-          choices: [ 'Up', 'Down', 'Left', 'Right', 'Exit' ],
+          type: "list",
+          name: "options",
+          message: "Move throught the field!",
+          choices: [ "Up", "Down", "Left", "Right", "Exit" ],
         },
       ])
       .then((answers) => {
         if ( answers.options == "Exit" ) {
           process.exit()
         } else {
-          this.move(answers.options);
+          this.moveUser(answers.options);
         }
       });
   }
 
+  moveRight() {
+    this.position.x++;
+  }
+
+  moveLeft() {
+    this.position.x--;
+  }
+
+  moveDown() {
+    this.position.y++;
+  }
+
+  moveUp() {
+    this.position.y--;
+  }
+
   run() {
-    this.prompt();
-  }
-
-  increaseCurrentPositionRowIndex() {
-    this.current.position[0]++;
-  }
-
-  decreaseCurrentPositionRowIndex() {
-    this.current.position[0]--;
-  }
-
-  increaseCurrentPositionColIndex() {
-    this.current.position[1]++;
-  }
-
-  decreaseCurrentPositionColIndex() {
-    this.current.position[1]--;
+    this.printField();
+    this.promptUser();
   }
 
 }
 
-const myField = new Field([
-  ['*', '░', 'O', '░'],  // row 0
-  ['░', 'O', '░', '░'],  // row 1
-  ['░', '^', '░', '░'],  // row 2
-  ['░', '░', '░', '░']   // row 3
-]);
+const myField = new Field(fieldGenerator(6,6));
