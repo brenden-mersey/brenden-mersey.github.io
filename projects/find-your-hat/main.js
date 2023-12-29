@@ -1,50 +1,5 @@
 import inquirer from "inquirer";
 
-function fieldGenerator(width=5, height=5) {
-
-  const field = [];
-  const markers = [ "░", "O", "^" ];
-
-  for ( let i = 0; i < height; i++ ) {
-
-    const fieldRow = [];
-    let holeCount = 0;
-
-    for ( let j = 0; j < width; j++ ) {
-
-      if ( i === 0 && j === 0 ) {
-        fieldRow.push("*");
-      } else {
-
-        let randomIndex = Math.floor(Math.random()*markers.length);
-        let randomMarker = markers[randomIndex];
-
-        if ( randomMarker === "^" ) {
-          markers.splice(randomIndex, 1);
-        }
-
-        if ( randomMarker === "O" ) {
-          if ( holeCount > 0 ) {
-            randomMarker = "░";
-          } else {
-             holeCount++;
-          }
-        }
-
-        fieldRow.push(randomMarker);
-
-      }
-
-    }
-
-    field.push(fieldRow);
-
-  }
-
-  return field;
-
-}
-
 function logger(message = "") {
   console.log(`////////////////////////////////////////////////////////////`);
   console.log(`${message}`);
@@ -203,6 +158,51 @@ class Field {
     this.promptUser();
   }
 
+  static generateField(width=5, height=5) {
+
+    const field = [];
+    const markers = [ "░", "O", "^" ];
+
+    for ( let i = 0; i < height; i++ ) {
+
+      const fieldRow = [];
+      let holeCount = 0;
+
+      for ( let j = 0; j < width; j++ ) {
+
+        if ( i === 0 && j === 0 ) {
+          fieldRow.push("*");
+        } else {
+
+          let randomIndex = Math.floor(Math.random()*markers.length);
+          let randomMarker = markers[randomIndex];
+
+          if ( randomMarker === "^" ) {
+            markers.splice(randomIndex, 1);
+          }
+
+          if ( randomMarker === "O" ) {
+            if ( holeCount > 0 ) {
+              randomMarker = "░";
+            } else {
+               holeCount++;
+            }
+          }
+
+          fieldRow.push(randomMarker);
+
+        }
+
+      }
+
+      field.push(fieldRow);
+
+    }
+
+    return field;
+
+  }
+
 }
 
-const myField = new Field(fieldGenerator(6,6));
+const myField = new Field(Field.generateField(3,3));
