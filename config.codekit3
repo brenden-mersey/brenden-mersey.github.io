@@ -1846,6 +1846,14 @@
       "sC" : 3,
       "tS" : 1
     },
+    "\/projects\/find-your-hat\/.nova\/Configuration.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/projects\/find-your-hat\/.nova\/Configuration-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/projects\/find-your-hat\/main.js" : {
       "bF" : 4,
       "ft" : 64,
